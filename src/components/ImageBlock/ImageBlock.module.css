@@ -1,0 +1,29 @@
+.gridcontainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent; /* Можно изменить при необходимости */
+}
+
+.image {
+  width: 400px; /* Размеры изображения */
+  height: 150px;
+  object-fit: contain; /* Сохраняем пропорции изображения */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.image:hover {
+  filter: hue-rotate(180deg); /* Синий оттенок при наведении */
+  transform: scale(1.05); /* Увеличение изображения при наведении */
+}
+
+/* Универсальные стили для кроссбраузерного отображения */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

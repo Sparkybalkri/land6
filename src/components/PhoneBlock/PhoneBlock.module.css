@@ -1,0 +1,14 @@
+.container {
+  position: relative; /* Относительное позиционирование */
+  z-index: 2; /* Уровень слоя: выше "50M" */
+}
+
+.image {
+  width: 100%; /* Подстраивается под размер родителя */
+  max-width: 800px; /* Максимальная ширина для телефона */
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+

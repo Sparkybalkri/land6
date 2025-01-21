@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Адаптивное количество колонок */
+    gap: 0px; /* Расстояние между блоками */
+    justify-content: center; /* Выравнивание по центру */
+    align-items: center; /* Выравнивание по вертикали */
+    padding:250px;
+  }
+  
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .link:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+    
+  }
+  
+  .image {
+    width: 50px; /* Размер изображений */
+    height: 50px;
+    object-fit: contain; /* Пропорциональная подгонка */
+  }
+  

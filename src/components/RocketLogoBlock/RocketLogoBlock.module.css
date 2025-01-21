@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-template-columns: auto auto; /* Рядом друг с другом */
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  gap: 20px; /* Расстояние между элементами */
+  width: 100%; /* Полная ширина */
+  padding: 0px; /* Без отступов */
+  position: relative; /* Для позиционирования вложенных элементов */
+  background-color: transparent;
+}
+
+.image {
+  object-fit: contain; /* Пропорциональная подгонка */
+  transition: transform 0.3s ease, filter 0.3s ease;
+  position: absolute; /* Позиционирование относительно контейнера */
+  z-index: 1; /* Уровень слоя */
+}
+
+.image:nth-child(1) {
+  left: 823.86px; /* Смещение от левого края */
+  top:  174px; /* Смещение от верхнего края */
+}
+
+.image:nth-child(2) {
+  left: 1080px; /* Смещение второго изображения */
+  top: 290px; /* Верх второго изображения */
+  z-index: 2; /* Поверх первого */
+}
+
+
+
+  

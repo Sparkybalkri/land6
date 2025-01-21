@@ -1,0 +1,31 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 500px;
+  height: auto;
+}
+
+.tasksContainer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.tasksImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}

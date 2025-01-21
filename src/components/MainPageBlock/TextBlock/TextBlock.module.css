@@ -1,0 +1,18 @@
+.textContainer {
+    display: grid;
+    grid-template-rows: auto 1fr; /* Первая строка для текста, вторая для остального */
+    justify-items: center; /* Выравнивание по центру по горизонтали */
+    align-items: start; /* Выравнивание по вертикали */
+    text-align: center;
+    padding-top: 50px; /* Отступ сверху */
+    height: 100%; /* Устанавливает высоту контейнера */
+}
+
+.h1 {
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin: 0; /* Убирает лишние внешние отступы */
+}
+
+  

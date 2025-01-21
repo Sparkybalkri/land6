@@ -1,0 +1,14 @@
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0px;
+  width: 100%;
+  height: 120%;
+  background-image: url('/violet-bg.png'); /* Укажите путь к вашему изображению */
+  background-size: cover; /* Масштабировать изображение, чтобы оно покрывало весь блок */
+  background-position: center; /* Центрировать изображение */
+  background-repeat: no-repeat; /* Избежать повторения изображения */
+  padding: 0px;
+}
+
+  

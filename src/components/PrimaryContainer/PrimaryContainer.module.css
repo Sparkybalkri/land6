@@ -1,0 +1,52 @@
+.primaryContainer {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    justify-items: center;
+    background-color: #000;
+    color: #fff;
+
+    height: 100vh;
+    width: 100%;
+    margin-top: 50px; /* Отступ сверху */
+}
+  
+  /* Кнопка */
+  .buttonContainer {
+    text-align: center;
+  }
+  
+  .telegramButton {
+    background-color: #0088cc;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .telegramButton:hover {
+    background-color: #005f8c;
+  }
+  
+  /* Футер */
+  .footer {
+    text-align: center;
+  }
+  
+  .footer h2 {
+    margin-bottom: 10px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .socialIcons img {
+    width: 40px;
+    height: 40px;
+  }
+  

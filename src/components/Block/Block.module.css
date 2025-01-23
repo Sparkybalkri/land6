@@ -1,96 +1,128 @@
 .block {
-  display: grid;
-  grid-template-columns: 45% 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background-color: black;
   position: relative;
   overflow: hidden;
 }
 
-/* Фиолетовая тень */
+.container {
+  position: relative;
+  width: 1440px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-15%, -18%);
+}
+
+.cyanShadow {
+  position: absolute;
+  width: 683px;
+  height: 106px;
+  right: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .purpleShadow {
   position: absolute;
-  width: 800px;
-  height: 800px;
-  background: radial-gradient(circle, rgba(98, 1, 255, 0.3) 0%, rgba(98, 1, 255, 0) 70%);
-  top: 50%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* Голубая тень */
-.blueShadow {
-  position: absolute;
-  width: 800px;
-  height: 800px;
-  background: radial-gradient(circle, rgba(0, 172, 255, 0.3) 0%, rgba(0, 172, 255, 0) 70%);
+  width: 467px;
+  height: 324px;
+  left: 20%;
   top: 40%;
-  right: 20%;
-  transform: translate(50%, -50%);
-  pointer-events: none;
+  transform: translateY(-50%);
   z-index: 1;
+  pointer-events: none;
 }
 
-.leftColumn {
+.content {
   position: relative;
+  width: 100%;
+  max-width: 1200px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   z-index: 2;
+  margin: 0 auto; /* Центрируем по горизонтали */
+}
+
+.leftSide {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.rightSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  margin-left: 380px;
+  transform: translateY(-150px);
 }
 
 .iphone {
+  position: relative;
+  width: 500px;
+  z-index: 3;
   transform: translateY(0);
   transition: transform 0.3s ease-out;
-  width: 100%;
-  max-width: 600px;
-  margin-top: 100px;
+  top: 0px;
+  left:0px;
 }
 
 .fifty {
   position: absolute;
-  bottom: 20%;
-  left: 15%;
-  width: 300px;
-  z-index: 1;
-}
-
-.rightColumn {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
+  width: 400px;
+  left: 0;
+  bottom: 0;
   z-index: 2;
+  transform: translateY(50%);
+  top:190px;
 }
 
-.row1 {
-  margin-top: 20px;
-  width: 100%;
-  max-width: 400px;
-}
-
-.row2 {
-  margin-top: 30px;
-  width: 100%;
-  max-width: 500px;
-}
-
-.row3 {
-  margin-top: auto;
-  display: flex;
-  justify-content: center;
-}
-
-/* Ракета */
 .rocket {
   position: absolute;
-  top: 20%;
-  right: 10%;
   width: 200px;
-  z-index: 3;
-  animation: floatRocket 3s ease-in-out infinite;
+  top: 0%;
+  right: 135%;
+  z-index: 4;
+  transform: translateY(10%); /* Центрируем ракету относительно текста */
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  z-index: 2;
+  
+}
+
+.logo {
+  width: 400px;
+  height: auto;
+  
+}
+
+.description {
+  width: 460px;
+  height: auto;
+}
+
+.button {
+  width: 299px;
+  height: auto;
+  cursor: pointer;
 }
 
 @keyframes floatRocket {
@@ -102,14 +134,25 @@
   }
 }
 
-/* Анимация для телефона при скролле */
-.scrollAnimation {
-  transform: translateY(calc(-1 * var(--scroll-amount)));
-  transition: transform 0.3s ease-out;
+/* Добавляем медиа-запросы для поддержки масштабирования */
+/* Медиа-запросы для сохранения пропорций */
+@media (max-width: 1440px) {
+  .container {
+    transform: translate(-5%, -10%) scale(0.9);
+  }
 }
 
+@media (max-width: 1200px) {
+  .container {
+    transform: translate(-5%, -10%) scale(0.8);
+  }
+}
 
-
+@media (max-width: 992px) {
+  .container {
+    transform: translate(-5%, -10%) scale(0.7);
+  }
+}
 
 
 

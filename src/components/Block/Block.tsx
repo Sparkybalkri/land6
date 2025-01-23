@@ -14,45 +14,54 @@ export const Block = () => {
 
   return (
     <div className={styles.block}>
-      {/* Фоновые тени */}
-      <div className={styles.purpleShadow} />
-      <div className={styles.blueShadow} />
+      <div className={styles.container}>
+        {/* Тени */}
+        <img src="/Vector3.svg" alt="Cyan shadow" className={styles.cyanShadow} />
+        <img src="/Vector4.svg" alt="Purple shadow" className={styles.purpleShadow} />
+        
+        <div className={styles.content}>
+          <div className={styles.leftSide}>
+            {/* 50M за телефоном */}
+            <div className={styles.fifty}>
+              <img src="/50M.svg" alt="50M" />
+            </div>
+            
+            {/* iPhone */}
+            <div 
+              className={styles.iphone}
+              style={{
+                transform: `translateY(${-scrollPosition / 10}px)`
+              }}
+            >
+              <img src="/iphone 1.svg" alt="iPhone" />
+            </div>
+          </div>
 
-      {/* Левая колонка */}
-      <div className={styles.leftColumn}>
-        <div 
-          className={styles.iphone} 
-          style={{
-            transform: `translateY(${-scrollPosition / 10}px)`
-          }}
-        >
-          <img src="/iphone 1.svg" alt="iphone" />
-        </div>
-        <div className={styles.fifty}>
-          <img src="/50M.svg" alt="50M" />
-        </div>
-      </div>
+          <div className={styles.rightSide}>
+            {/* Ракета между телефоном и текстом */}
+            <div className={styles.rocket}>
+              <img src="/Group 28.svg" alt="Rocket" />
+            </div>
 
-      {/* Правая колонка */}
-      <div className={styles.rightColumn}>
-        <div className={styles.row1}>
-          <img src="/Group 127.svg" alt="TurboTon Farm" />
+            <div className={styles.textBlock}>
+  <img 
+    src="/Group 127.svg" 
+    alt="TurboTon Farm" 
+    className={styles.logo}
+  />
+  <img 
+    src="/Collect more stardust and take a part in distribution of 50 M TurboTON tokens.svg" 
+    alt="Description" 
+    className={styles.description}
+  />
+  <img 
+    src="/Frame 2087326523.svg" 
+    alt="Play in Telegram" 
+    className={styles.button}
+  />
+</div>
+          </div>
         </div>
-        <div className={styles.row2}>
-          <img 
-            src="/Collect more stardust and take a part in distribution of 50 M TurboTON tokens.svg" 
-            alt="TurboTon Farm" 
-          />
-          <img src="/Frame 2087326523.svg" alt="Button" style={{ marginTop: '20px' }} />
-        </div>
-        <div className={styles.row3}>
-          {/* Место для дополнительного контента */}
-        </div>
-      </div>
-
-      {/* Ракета */}
-      <div className={styles.rocket}>
-        <img src="/Group 28.svg" alt="Rocket" />
       </div>
     </div>
   );

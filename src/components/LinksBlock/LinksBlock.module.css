@@ -1,0 +1,49 @@
+.linksBlock {
+	display: grid;
+	height: fit-content;
+	width: 80%;
+	gap: 20px;
+	justify-items: center;
+}
+
+.linksText {
+	font-weight: 600;
+	color: white
+}
+
+.linksDiv {
+	display: grid;
+	align-items: center;
+	gap: 20px;
+	grid-template-columns: repeat(8, auto);
+}
+
+.linkIcon {
+	cursor: pointer;
+	transition-duration: 300ms;
+}
+
+.linkIcon:active {
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	transform: scale(1.163);
+}
+
+.linkIcon > svg {
+	width: 40px;
+	height: 40px;
+}
+
+@media (min-width: 1024px) {
+	.linkIcon:hover {
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		transform: scale(1.163);
+	}
+}
+
+@media (max-width: 580px) {
+	.linksDiv {
+		grid-template-columns: repeat(4, auto);
+	}
+}

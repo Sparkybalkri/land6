@@ -1,0 +1,56 @@
+.gridContainer {
+  background: rgb(0, 0, 0);
+  width: 80%;
+  height: fit-content;
+  
+  display: grid;
+  grid-template-columns: 12% 12% 13% auto; /* Добавили колонку для кнопки с изображением */
+  gap: 52px; /* Расстояние между кнопками */
+  justify-items: center;
+  align-items: center;
+  margin-top: 50px;
+  
+}
+
+
+.link {
+  text-decoration: none;
+
+}
+
+.button {
+  display: grid;
+  align-items: center;
+  gap: 0px; /* Расстояние между изображением и текстом */
+  padding: 0px;
+  transition: transform 0.2s, filter 0.2s; 
+  justify-items: end;
+}
+
+
+
+.button img {
+  width: 141px; /* Настройте размер изображения */
+  height: 38px;
+  transition: filter 0.2s;
+ 
+}
+
+.imageButton {
+  border-radius: 10px; /* Радиус изображения */
+}
+
+.button span {
+  color: white;
+  font-size: 18px;
+  font-weight: normal;
+  transition: color 0.25s;
+  white-space: nowrap; /* Отключает перенос текста */
+  text-overflow: ellipsis; /* Если текст слишком длинный */
+}
+
+.button:hover span {
+  color: #0098FE;
+}
+
+

@@ -3,7 +3,8 @@ import styles from './Buttons.module.css';
 export default function Buttons() {
   return (
     <div className={styles.gridContainer}>
-      <a
+      {/* Кнопки с текстом */}
+      <a 
         href="https://example.com/memecoin"
         target="_blank"
         rel="noopener noreferrer"
@@ -13,8 +14,8 @@ export default function Buttons() {
           <span>TurboTON Memecoin</span>
         </div>
       </a>
-
-      <a
+      
+      <a 
         href="https://example.com/farm"
         target="_blank"
         rel="noopener noreferrer"
@@ -25,7 +26,7 @@ export default function Buttons() {
         </div>
       </a>
 
-      <a
+      <a 
         href="https://example.com/whitepaper"
         target="_blank"
         rel="noopener noreferrer"
@@ -36,23 +37,24 @@ export default function Buttons() {
         </div>
       </a>
 
-      {/* Добавляем кнопку с изображением */}
-      <a
+      {/* Кнопка с изображением */}
+      <a 
         href="https://example.com/buy"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.link}
       >
         <div className={styles.button}>
-          <img
-            src="/BuyButton.png"
-            alt="Buy on STON.fi"
-            className={styles.imageButton}
+          <img 
+            src="/Frame 2087326253.svg" 
+            alt="Buy on STON.fi" 
+            className={styles.imageButton} 
           />
         </div>
       </a>
     </div>
   );
 }
+
 
 

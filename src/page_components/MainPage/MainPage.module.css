@@ -1,10 +1,8 @@
 .parentContainer {
   display: grid;
-  grid-template-columns:  1fr; /* Две колонки: телефон слева, ракета и текст справа */
-  align-items: center; /* Выравнивание по вертикали */
-  justify-content: center; /* Центрирование контейнера */
-  gap: 20px; /* Расстояние между колонками */
+  
+  justify-items: center; /* Центрирование контейнера */
   width: 100%; /* Полная ширина страницы */
-  height: auto; /* Автоматическая высота */
+  
 }
 

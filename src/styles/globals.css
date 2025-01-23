@@ -1,22 +1,56 @@
 /* src/app/globals.css */
+html,
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #000000;
-  color: #f7f7f7;
+	margin: 0;
+	padding: 0;
+
+	-webkit-user-select: auto;
+	-moz-user-select: auto;
+	-ms-user-select: auto;
+	user-select: auto;
+
+	background: var(--black);
+
+	font-family: 'Manrope', sans-serif;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-tap-highlight-color: transparent;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-}
+::-moz-focus-outer,
+::-moz-focus-inner {
+	padding: 0;
 
-ul {
-  padding: 0;
-  list-style-type: none;
+	border: 0;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	text-decoration: none;
+}
+
+@media (max-width: 480px) {
+	::-webkit-scrollbar {
+		width: 5px;
+		height: 5px;
+	}
+}
+
+:root {
+	--primary: #0096FF;
+	--white: #FFF;
+	--black: #000;
+	--dark: #202426;
+	--light: #F1F1F1;
+	--darkLight: #E5E5E5;
+	--glow1: #00ACFF;
+	--glow2: #6201FF;
+	--glow3: #FF5C01;
+	--textLight: #80CBFF;
+	--chartBg: #001925;
+	--chartBtn: #0081D8;
+	--chartText: #00557D;
+	--chartBar: #01ACFF;
+	--chartDate: #6E6E6E;
+	--error: #FF1500;
+	--banana: #FFC803;
+	--font-family: 'Manrope', sans-serif;
 }

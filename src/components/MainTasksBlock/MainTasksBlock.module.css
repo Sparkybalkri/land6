@@ -1,0 +1,97 @@
+.mainContainer {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  height: 797px;
+  margin: 0;
+  padding: 0;
+  background-image: url('/violet-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-top: 100px;
+  max-width: 100vw;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.mainSection {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  height: 100%;
+  padding: 0 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.leftColumn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-right: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 40px;
+}
+
+.middleColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contentWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.gecko {
+  position: relative;
+  z-index: 2;
+  width: 298.59px;
+  height: 444.82px;
+}
+
+.tasksBackground {
+  position: absolute;
+  z-index: 1;
+  width: 685px;
+  height: 496px;
+  right: -325px;
+  transform: translateY(200px); /* Начальная позиция ниже */
+  transition: transform 0.3s ease-out;
+  object-fit: contain;
+}
+
+.svgImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.textContent {
+  max-width: 460px;
+  max-height: 432px;
+  margin-right: -210px;
+  margin-top: -150px;
+}
+
+.bottomText {
+  grid-row: 3;
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+}

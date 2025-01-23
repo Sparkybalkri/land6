@@ -7,7 +7,7 @@ import RocketLogoBlock from '../../components/MainContentBlock/RocketLogoBlock/R
 import PhoneBlock from '../../components/MainContentBlock/PhoneBlock/PhoneBlock';
 import FiftyMBlock from "../../components/MainContentBlock/FiftyMBlock/FiftyMBlock";
 // import LinksBlock from '../../components/MainContentBlock/LinksBlock/LinksBlock';
-import MainTaskBlock from '../../components/MainTaskBlock/MainTaskBlock';
+import MainTasksBlock from '../../components/MainTasksBlock/MainTasksBlock';
 import MainPageBlock from '../../components/MainPageBlock/MainPageBlock';
 import MainFarmBlock from '../../components/MainFarmBlock/MainFarmBlock';
 import PrimaryContainer from '../../components/PrimaryContainer/PrimaryContainer';
@@ -24,13 +24,13 @@ const MainPage = (): JSX.Element => {
       <Buttons />
         <Block />
         <LinksBlock/>
-       
+
         {/* <ImageBlock />
         <RocketLogoBlock /> 
         <PhoneBlock />
         <FiftyMBlock /> */}
         {/* <LinksBlock />  */}
-         <MainTaskBlock />
+        <MainTasksBlock/>
         <MainPageBlock />
         <MainFarmBlock/>
         <PrimaryContainer/> 

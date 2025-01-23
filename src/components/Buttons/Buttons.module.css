@@ -25,6 +25,7 @@
   padding: 0px;
   transition: transform 0.2s, filter 0.2s; 
   justify-items: end;
+  font-family: 'Manrope', sans-serif;
 }
 
 
@@ -47,6 +48,7 @@
   transition: color 0.25s;
   white-space: nowrap; /* Отключает перенос текста */
   text-overflow: ellipsis; /* Если текст слишком длинный */
+  font-family: 'Manrope', sans-serif;
 }
 
 .button:hover span {

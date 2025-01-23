@@ -1,14 +1,23 @@
-import type { AppProps } from 'next/app';
-import { Manrope } from 'next/font/google';
+
+import { Manrope } from '@next/font/google';
+import '../styles/globals.css';
 
 
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+
+
+const manrope = Manrope({
+  weight: ['400', '500', '700'], // Укажите нужные веса
+  subsets: ['latin'], // Выберите поддерживаемый набор символов
+});
+
+export default function MyApp({ Component, pageProps }: { Component: any; pageProps: any }) {
   return (
-    <main>
+    <main className={manrope.className}>
       <Component {...pageProps} />
     </main>
   );
 }
+
 
 

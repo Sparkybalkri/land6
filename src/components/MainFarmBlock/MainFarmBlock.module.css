@@ -1,21 +1,28 @@
 .mainContainer {
+  
     display: grid;
-    grid-template-rows: auto 1fr;
-    height: 1100px;
+    grid-template-columns: 100% 150% ; /* Левая и правая колонки */
+    grid-template-rows: 1fr; /* Автоматический размер строк */
+    gap: 0px; /* Промежуток между элементами */
     width: 100%;
+    height: 100%; /* Полная высота окна */
+    
+    margin-top: 50px;
+
     background-image: url('/dark-blue-bg.png'); /* Укажите путь к вашему изображению */
     background-size: cover; /* Масштабировать изображение, чтобы оно покрывало весь блок */
     background-position: center; /* Центрировать изображение */
     background-repeat: no-repeat; /* Избежать повторения изображения */
-  }
   
+} 
 
   
   .gridContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 70% auto;
     gap: 0px;
-    padding: 0 20rem;
-    height: 0vh;
-}
+    
+    height: 100% ;
+    width: 80%;
+  }
   

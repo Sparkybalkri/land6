@@ -24,12 +24,10 @@ const ScrollEffectBlock: React.FC = () => {
   return (
     <div className={styles.container}>
       {/* Левая колонка */}
-      <div>
-        <img src="/Frame.png" alt="Main Content" className={styles.fixedImage} />
-      </div>
 
-      {/* Правая колонка */}
-      <div className={styles.rightColumn}>
+
+      {/* левая колонка */}
+      <div className={styles.leftColumn}>
         <div className={styles.imageWrapper}>
           <img
             src="/Frens.png"

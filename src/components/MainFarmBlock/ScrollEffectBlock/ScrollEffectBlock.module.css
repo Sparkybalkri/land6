@@ -1,55 +1,32 @@
-.container {
-  display: grid;
-  grid-template-columns:  1fr; /* Две колонки */
-  width: 80%;
-  height: 100%;
+.container{
+  width: 100%;
   justify-items: center;
   align-items: center;
-}
 
-/* Левая колонка: фиксированное изображение */
-.fixedImage {
-  width: 0%;
-  height: 505px;
-  object-fit: cover;
-}
 
-/* Правая колонка */
-.rightColumn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  height: 1050px;
-}
 
-/* Обёртка для изображения и кнопки */
-.imageWrapper {
+}
+.imageWrapper{
+ justify-items: end;
+  align-items: end;
+  height: 0vh;
   display: grid;
-  grid-template-rows: auto 1fr; /* Две строки: первая для кнопки, вторая для изображения */
-  justify-items: center;
-  align-items: start; /* Верхнее выравнивание */
+  margin-top: 290px;
 }
 
-/* Изображение в фоне */
-.backgroundImage {
-  grid-area: image;
-  display: flex;
-  max-width: 100%;
-  height: auto;
-  padding-top: 100px; /* Отступ сверху */
-  object-fit: cover;
+.backgroundImage{
+ justify-items: end;
+  align-items: end;
+
+
 }
 
-.orangeButton {
-  grid-area: button;
-  display: flex;
-  max-height: 50px; /* Максимальная высота кнопки */
-  justify-content: center;
-  align-items: center;
-  padding-top: 1000px; /* Отступ сверху */
-  transform: translateY(0); /* Начальная позиция */
-  transition: transform 0.2s ease-out; /* Плавное движение */
+.orangeButton{
+  justify-items: end;
+  align-items: end;
+  height: 0vh;
+  display: grid;
+  margin-top: 260px;
 }
 
 

@@ -4,12 +4,7 @@ import styles from './ButtonBlock.module.css';
 const ButtonBlock = () => {
   return (
     <div className={styles.buttonContainer}>
-      <button
-        className={styles.button}
-        onClick={() => window.open('https://example.com', '_blank')}
-      >
-        Start Game Now
-      </button>
+        <div className={styles.block5}><img src="/Frame 2087326524.svg" alt="TurboTon Farm" className="svgImage" /></div>
     </div>
   );
 };

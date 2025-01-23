@@ -15,12 +15,16 @@ export const Block = () => {
 
       {/* Правая колонка */}
       <div className={styles.rightColumn}>
+      
         <div className={styles.row}>
+        
         <div className={styles.block5}><img src="/Group 127.svg" alt="TurboTon Farm" className="svgImage" /></div>
         </div>
         <div className={styles.row}>
         <div className={styles.block6}><img src="/Collect more stardust and take a part in distribution of 50 M TurboTON tokens.svg" alt="TurboTon Farm" className="svgImage" /></div>
-        <div className={styles.block7}><img src="/Frame 2087326523.svg" alt="Button" className="svgImage" /></div>
+        <div className={styles.block7}><img src="/Frame 2087326523.svg" alt="Button" className="svgImage" />
+        
+        </div>
         </div>
         <div className={styles.row}>
         

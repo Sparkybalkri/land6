@@ -1,29 +1,27 @@
-.card {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    border-radius: 0px;
-    margin-top: 0px;
-    
-  
-  }
-  
-  .cardText1 {
-    width:100%;
-    height:100%;
-    align-items: end;
-    justify-items: end;
-    
-    position:absolute;
-    z-index: 10;
-  }
-  
+.card{
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  height: 690px;
 
-  .cardText2 {
-    width:100%;
-    height:100%;
-    align-items: end;
-    justify-items: end;
-    position: relative;
-    z-index: 5;
-  }
+
+}
+
+.cardText1{
+  justify-items: center;
+  align-items: center;
+ 
+  display: grid;
+  margin-top: 500px;
+
+
+}
+.cardText2{
+  justify-items:center;
+  align-items: center;
+  
+  display: grid;
+  margin-top: 800px;
+
+
+}

@@ -4,7 +4,7 @@
     justify-items: center; /* Выравнивание по центру по горизонтали */
     align-items: start; /* Выравнивание по вертикали */
     text-align: center;
-    margin-top: 20px; /* Отступ сверху */
+    margin-top: 200px; /* Отступ сверху */
     height: 100%; /* Устанавливает высоту контейнера */
 }
 
@@ -13,4 +13,10 @@
     line-height: 1.2;
     font-weight: bold;
     margin: 0; /* Убирает лишние внешние отступы */
+}
+
+.block5{
+    margin-top: 100px;
+
+
 }

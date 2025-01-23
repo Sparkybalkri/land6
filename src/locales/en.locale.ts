@@ -9,4 +9,5 @@ export const en = {
   
     buy: "Buy on STON.fi",
     official_links: "Official Links",
+    
 };

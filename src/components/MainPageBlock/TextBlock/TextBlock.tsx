@@ -4,7 +4,7 @@ import styles from './TextBlock.module.css';
 const TextBlock = () => {
   return (
     <div className={styles.textContainer}>
-      <h1>Improve Your Rank and Farm more Stardust</h1>
+      <div className={styles.block5}><img src="/Improve Your Rank and Farm more Stardust.svg" alt="TurboTon Farm" className="svgImage" /></div>
     </div>
   );
 };

@@ -6,7 +6,7 @@ const RightColumn = () => {
   return (
     <div className={styles.rightContainer}>
       <Card />
-      <p className={styles.text}>Buy tokens to boost your farming!</p>
+      <p className={styles.text}></p>
     </div>
   );
 };

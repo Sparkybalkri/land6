@@ -34,7 +34,7 @@ const MainPage = (): JSX.Element => {
         <MainPageBlock />
         <MainFarmBlock/>
         <PrimaryContainer/> 
-      
+        <LinksBlock/>
       </div>
     </>
   );

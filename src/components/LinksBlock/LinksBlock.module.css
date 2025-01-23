@@ -4,11 +4,14 @@
 	width: 80%;
 	gap: 20px;
 	justify-items: center;
+	margin-top: 30px;
 }
+
 
 .linksText {
 	font-weight: 600;
-	color: white
+	color: rgb(255, 255, 255)
+	
 }
 
 .linksDiv {

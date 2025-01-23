@@ -25,7 +25,9 @@
 }
 
 .tasksImage {
-  width: 100%;
-  height: auto;
+  width: 250%;
+  height: 1400px;
   object-fit: contain;
+  display:grid;
+  margin-top: 0px
 }

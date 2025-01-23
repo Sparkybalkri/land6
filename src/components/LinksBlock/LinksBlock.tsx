@@ -29,9 +29,10 @@ export const LinksBlock = (): JSX.Element => {
 
     return (
         <div className={styles.linksBlock}>
-            <Htag tag='xl' className={styles.linksText}>
+            {/* <Htag tag='xl' className={styles.linksText}>
                 {setLocale(router.locale).official_links}
-            </Htag>
+            </Htag> */}
+            <div className={styles.linksText}><img src="/Official Links.svg" alt="TurboTon Farm" className="svgImage" /></div>
             <div className={styles.linksDiv}>
                 {linksData.map(link => (
                     link.url &&

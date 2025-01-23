@@ -4,7 +4,7 @@
     grid-template-rows: 1fr; /* Автоматический размер строк */
     gap: 0px; /* Промежуток между элементами */
     width: 80%;
-    height: 1000px; /* Полная высота окна */
+    height: 100%; /* Полная высота окна */
     background-color: rgb(0, 0, 0);
     margin-top: 50px;
 }
@@ -17,18 +17,24 @@
     justify-items: end;
     align-items: end;
     background-color: rgb(0, 0, 0);
-    border: 1px solid #ffffff;
+    /* border: 1px solid #ffffff; */
 }
-  
+.block8 {
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  width: 100%;
+  height: 100%;
+}
+
   .block4 {
     display: grid;
     justify-items: center;
-    align-items: center;
+    align-items: start;
     width: 100%;
     height: 100%;
   }
-  
-  
+
   
   .rightColumn {
     width: 100%;
@@ -39,8 +45,8 @@
   }
   .block5 {
     display: grid;
-    justify-items: center;
-    align-items: center;
+    justify-items: start;
+    align-items: end;
     width: 100%;
     height: 100%;
   }
@@ -50,11 +56,25 @@
     justify-items: center;
     align-items: center;
     background-color: rgb(0, 0, 0);
-    border: 1px solid #ffffff; /* Рамка для наглядности */
+    /* border: 1px solid #ffffff;  */
   }
   
-  
+  .block6 {
+    display: grid;
+    justify-items:start;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    margin-top: 110px;
+  }
 
+  .block7 {
+    display: grid;
+    justify-items: start;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+  }
 
 
 

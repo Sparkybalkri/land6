@@ -4,8 +4,8 @@ import styles from './Card.module.css';
 const Card = () => {
   return (
     <div className={styles.card}>
-      <img src="/card-image.png" alt="Farming Boost" />
-      <p className={styles.cardText}></p>
+      <p className={styles.cardText}><img src="/Group 147.svg" alt="Farming Boost" /></p>
+      <p className={styles.cardText}><img src="/Profile 1.svg" alt="Farming Boost" /></p>
     </div>
   );
 };

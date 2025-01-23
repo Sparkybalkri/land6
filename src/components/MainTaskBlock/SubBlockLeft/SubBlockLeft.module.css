@@ -4,20 +4,43 @@
   align-items: flex-start; /* Выравнивание текста по левому краю */
   gap: 0px;
   color: white;
+  margin-top: 250px;
 }
 
 .title {
-  display: flex;
+  display: grid;
   flex-direction: column; /* Разбивает строки по вертикали */
   font-size: 56px;
   line-height: 64px;
   font-family: 'Manrope', sans-serif;
-  margin: 0;
+  margin-top: 40px;
 }
 
-.text {
+.text3 {
   font-size: 16px;
   line-height: 24px;
   font-family: 'Manrope', sans-serif;
   margin: 0;
+}
+.text4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+}
+.text1 {
+  font-size: 16px;
+  align-items: end;
+  justify-items: end;
+  font-family: 'Manrope', sans-serif;
+  display: grid;
+  
+}
+.text2 {
+  font-size: 16px;
+
+  font-family: 'Manrope', sans-serif;
+  display:grid;
+  margin-top: 0px;
+
 }

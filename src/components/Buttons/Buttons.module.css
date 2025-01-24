@@ -1,44 +1,39 @@
 .gridContainer {
-  background: rgb(0, 0, 0);
-  width: 80%;
-  height: fit-content;
-  
-  display: grid;
-  grid-template-columns: 12% 12% 13% auto; /* Добавили колонку для кнопки с изображением */
-  gap: 52px; /* Расстояние между кнопками */
-  justify-items: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
-  
+  width: 100%;
+  padding: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
 }
 
+.leftButtons {
+  display: flex;
+  font-size: 18px;
+  gap: 52px;
+}
+
+.rightButton {
+  margin-left: 690px;
+}
 
 .link {
   text-decoration: none;
-
 }
 
 .button {
-  display: grid;
+  display: flex;
   align-items: center;
-  gap: 0px; /* Расстояние между изображением и текстом */
-  padding: 0px;
-  transition: transform 0.2s, filter 0.2s; 
-  justify-items: end;
+  padding: 10px 15px;
+  transition: transform 0.2s, filter 0.2s;
   font-family: 'Manrope', sans-serif;
-}
-
-
-
-.button img {
-  width: 141px; /* Настройте размер изображения */
-  height: 38px;
-  transition: filter 0.2s;
- 
-}
-
-.imageButton {
-  border-radius: 10px; /* Радиус изображения */
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 5px;
 }
 
 .button span {
@@ -46,13 +41,54 @@
   font-size: 18px;
   font-weight: normal;
   transition: color 0.25s;
-  white-space: nowrap; /* Отключает перенос текста */
-  text-overflow: ellipsis; /* Если текст слишком длинный */
-  font-family: 'Manrope', sans-serif;
 }
 
 .button:hover span {
   color: #0098FE;
 }
 
+.imageButton {
+  border: none;
+  padding: 0;
+}
 
+.imageButton img {
+  width: 141px;
+  height: 38px;
+  transition: filter 0.2s;
+}
+
+@media (max-width: 1200px) {
+  .gridContainer {
+    flex-wrap: wrap;
+  }
+  
+  .leftButtons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .button span {
+    font-size: 18px;
+  }
+  
+  .imageButton img {
+    width: 120px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gridContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .leftButtons {
+    margin-bottom: 10px;
+  }
+  
+  .rightButton {
+    margin-left: 0;
+  }
+}

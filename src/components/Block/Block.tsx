@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react';
 import styles from './Block.module.css';
+import Buttons from '../Buttons/Buttons';
+import {LinksBlock} from '../LinksBlock/LinksBlock';
+
 
 export const Block = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -15,6 +18,10 @@ export const Block = () => {
   return (
     <div className={styles.block}>
       <div className={styles.container}>
+        
+          <Buttons />
+        
+        
         {/* Тени */}
         <img src="/Vector3.svg" alt="Cyan shadow" className={styles.cyanShadow} />
         <img src="/Vector4.svg" alt="Purple shadow" className={styles.purpleShadow} />
@@ -62,6 +69,7 @@ export const Block = () => {
 </div>
           </div>
         </div>
+        <LinksBlock />
       </div>
     </div>
   );

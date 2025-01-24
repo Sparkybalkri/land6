@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./PrimaryContainer.module.css";
 import Slider from "./Slider/Slider";
 import TextBlockw from './TextBlockw/TextBlockw';
+import { LinksBlock } from '../../components/LinksBlock/LinksBlock';
 
 const PrimaryContainer: React.FC = () => {
   return (
@@ -12,7 +13,11 @@ const PrimaryContainer: React.FC = () => {
       
       {/* Кнопка Play in Telegram */}
       <div className={styles.buttonContainer}>
-        <button className={styles.telegramButton}>Play in Telegram</button>
+      <img 
+    src="/Frame 2087326523.svg" 
+    alt="Play in Telegram" 
+    className={styles.button}
+    />
       </div>
 
       <div className={styles.footer}>
@@ -23,6 +28,7 @@ const PrimaryContainer: React.FC = () => {
           <img src="Group 196.png" alt="Twitter" />
         </div> */}
       </div> 
+    <LinksBlock/>
     </div>
   );
 }; 

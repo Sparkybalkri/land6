@@ -13,7 +13,7 @@ import MainFarmBlock from '../../components/MainFarmBlock/MainFarmBlock';
 import PrimaryContainer from '../../components/PrimaryContainer/PrimaryContainer';
 import MainContentBlock from '../../components/MainContentBlock/MainContentBlock';
 import {Block} from '../../components/Block/Block';
-import { LinksBlock } from '../../components/LinksBlock/LinksBlock';
+// import { LinksBlock } from '../../components/LinksBlock/LinksBlock';
 
 const MainPage = (): JSX.Element => {
   return (
@@ -23,7 +23,7 @@ const MainPage = (): JSX.Element => {
         
       <Buttons />
         <Block />
-        <LinksBlock/>
+        {/* <LinksBlock/> */}
 
         {/* <ImageBlock />
         <RocketLogoBlock /> 
@@ -34,7 +34,7 @@ const MainPage = (): JSX.Element => {
         <MainPageBlock />
         <MainFarmBlock/>
         <PrimaryContainer/> 
-        <LinksBlock/>
+        {/* <LinksBlock/> */}
       </div>
     </>
   );

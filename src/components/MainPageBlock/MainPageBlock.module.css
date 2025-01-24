@@ -9,4 +9,8 @@
     padding: 0px;
     color: white;
   }
-  
+  .sliderBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

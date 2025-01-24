@@ -1,34 +1,56 @@
-.container{
+.container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.backgroundImage {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  justify-items: center;
-  align-items: center;
-
-
-
-}
-.imageWrapper{
- justify-items: end;
-  align-items: end;
-  height: 0vh;
-  display: grid;
-  margin-top: 290px;
+  height: auto;
+  z-index: 1;
 }
 
-.backgroundImage{
- justify-items: end;
-  align-items: end;
-
-
+.cardOverlay {
+  position: absolute;
+  width: 443px; /* Размер из Figma */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  box-shadow: 0 0 44px rgba(255, 132, 0, 0.5); /* Свечение как на макете */
+  border-radius: 16px;
 }
 
-.orangeButton{
-  justify-items: end;
-  align-items: end;
-  height: 0vh;
-  display: grid;
-  margin-top: 260px;
+.cardOverlay img {
+  width: 100%;
+  height: auto;
 }
 
+.boostTag {
+  position: absolute;
+  width: 284px; /* Размер из Figma */
+  padding: 16px 28px;
+  background: linear-gradient(90deg, #FFA400 0%, #FF5C00 100%);
+  border-radius: 12px;
+  box-shadow: 0 0 44px rgba(255, 132, 0, 0.5);
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
 
 
 

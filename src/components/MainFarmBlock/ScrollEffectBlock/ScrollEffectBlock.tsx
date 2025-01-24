@@ -10,32 +10,34 @@ const ScrollEffectBlock: React.FC = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const buttonStyle = {
-    transform: `translateY(${-scrollPosition * 0.2}px)`, // Коэффициент для медленного движения
-    transition: 'transform 0.1s ease-out', // Плавность
+  const cardStyle = {
+    transform: `translate(-50%, calc(-50% + ${scrollPosition * 0.3}px))`,
+  };
+
+  const boostTagStyle = {
+    transform: `translate(-50%, calc(-50% + ${scrollPosition * 0.5}px))`,
   };
 
   return (
     <div className={styles.container}>
-      {/* Левая колонка */}
-
-
-      {/* левая колонка */}
-      <div className={styles.leftColumn}>
-        <div className={styles.imageWrapper}>
-          <img
-            src="/Frens.png"
-            alt="Max Holder Farming Boost"
-            className={styles.backgroundImage}
-          />
-          <div className={styles.orangeButton} style={buttonStyle}>
-            <img src="/Frame.png" alt="Farming Boost" />
+      <div className={styles.imageWrapper}>
+        <img
+          src="/Frens.png"
+          alt="Base Card"
+          className={styles.backgroundImage}
+        />
+        <div className={styles.cardOverlay} style={cardStyle}>
+          <img src="/card-bg.png" alt="Card" />
+        </div>
+        <div className={styles.boostTag} style={boostTagStyle}>
+          <div className="text-white">
+            <div className="flex justify-between items-center">
+              <span>Farming Boost from Frens</span>
+              <span>+88%</span>
+            </div>
           </div>
         </div>
       </div>

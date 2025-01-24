@@ -16,7 +16,7 @@
   .buttonContainer {
     text-align: center;
     display: grid;
-    
+    size: 22px;
   }
   
   .button {

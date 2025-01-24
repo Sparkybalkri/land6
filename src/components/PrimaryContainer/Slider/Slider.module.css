@@ -2,7 +2,7 @@
     overflow: hidden;
     width: 100%;
     position: relative;
-    margin-top: 100px;
+    margin-top: 70px;
   }
   
   .slider {
@@ -12,10 +12,12 @@
   }
   
   .slider img {
-    width: 200px;
-    height: 200px;
+    width: 516px;
+    height: 360px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 44px;
+    aspect-ratio: 516/360;  /* соотношение сторон как на макете */
+    max-height: 360px;     /* ограничиваем максимальную высоту */
   }
   
   /* Анимация для слайдера */

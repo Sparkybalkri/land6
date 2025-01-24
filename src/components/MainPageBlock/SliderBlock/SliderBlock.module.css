@@ -1,25 +1,81 @@
+
 .sliderWrapper {
-    overflow: hidden;
-    width: 100%;
-    position: relative;
-  }
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  margin-top: 1%;
+  overflow: hidden;  /* Это скроет горизонтальную прокрутку */
+  padding-bottom: 2%; /* И снизу */
+  padding-top: 5%; /* Добавляем отступ сверху */
+}
+
+.sliderContainer {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  z-index: 2;
+  overflow: visible; /* Оставляем visible для контента */
+}
+
+.slideContainer {
+  position: relative;
+  flex-shrink: 0;
+  width: 100%;
+  z-index: 3;
+  overflow: visible; /* Оставляем visible для контента */
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 4;
+  overflow: visible; /* Оставляем visible для контента */
+}
+
+.helmet {
+  position: absolute;
+  top: -12%;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  width: 5%;
+  height: auto;
+  z-index: 900;
+  overflow: visible; /* Оставляем visible для контента */
   
-  .sliderContainer {
-    display: grid;
-    grid-template-columns: repeat(10, 100%); /* 5 оригинальных + 5 клонированных */
-    transition: transform 0.5s ease-in-out;
-    width: 100%; /* Для бесшовности */
-  }
-  
-  .image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  
-  
-  .image.active {
-    opacity: 1;
-  }
-  
+}
+
+.helmetVisible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.rankText {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(20px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  width: 15%;
+  height: auto;
+  z-index: 899;
+}
+
+.rankTextVisible {
+  opacity: 1;
+  transform: translate(-50%, -50%) translateY(0);
+}
+.backgroundImage {
+  position: absolute;
+  width: 55%;
+  height: 120%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;  /* Это поместит изображение позади слайдера */
+  pointer-events: none;
+}

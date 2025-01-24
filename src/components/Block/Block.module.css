@@ -106,6 +106,7 @@
   flex-direction: column;
   gap: 80px;
   z-index: 2;
+  
   margin-top: 300px;
   margin-left: -50px;
   
@@ -118,7 +119,7 @@
 }
 
 .description {
-  width: 460px;
+  width: 95%;
   height: auto;
 }
 

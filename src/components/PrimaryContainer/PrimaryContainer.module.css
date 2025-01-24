@@ -46,8 +46,10 @@
   .footer h2 {
     margin-bottom: 400px;
     font-size: 56px;
-    margin-top: 10px;
+    margin-top: 90px;
     margin-right: -50px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
   }
   
   .socialIcons {

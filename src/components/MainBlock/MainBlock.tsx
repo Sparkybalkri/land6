@@ -18,6 +18,12 @@ const MainBlock = () => {
     transform: `translate(-50%, ${-scrollPosition * 0.3}px)`,
   };
 
+  const avatarStyle = {
+    transform: `translateY(${-scrollPosition * 0.3}px)`,
+  };
+  
+  
+  
   return (
     <div className={styles.mainContainer}>
       <div className={styles.innerContainer}>
@@ -43,6 +49,16 @@ const MainBlock = () => {
           </div>
           
           <div className={styles.cardContainer}>
+            {/* Оверлей с аватарами */}
+            <div className={styles.avatarOverlay}>
+              <img 
+                src="/img-avatars.svg" 
+                alt="Avatars" 
+                className={styles.avatarsImage}
+                style={avatarStyle}
+              />
+            </div>
+            
             <img 
               src="/Список друзей 1.svg" 
               alt="Frens Card" 

@@ -5,7 +5,7 @@ export default function Buttons() {
     <div className={styles.gridContainer}>
       <div className={styles.leftButtons}>
         <a 
-          href="https://example.com/memecoin"
+          href="https://turboton.meme/#about"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.link}
@@ -27,7 +27,7 @@ export default function Buttons() {
         </a>
 
         <a 
-          href="https://example.com/whitepaper"
+          href="https://turboton.meme/files/TurboTON-Whitepaper.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.link}
@@ -39,20 +39,19 @@ export default function Buttons() {
       </div>
 
       <div className={styles.rightButton}>
-        <a 
-          href="https://example.com/buy"
-          target="_blank"
-          rel="noopener noreferrer"
-          className={styles.link}
-        >
-          <div className={`${styles.button} ${styles.imageButton}`}>
-            <img 
-              src="/Frame 2087326253.svg" 
-              alt="Buy on STON.fi" 
-            />
-          </div>
-        </a>
-      </div>
+      <a 
+    href="https://ston.fi/turboton"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={styles.button1}
+  >
+    <img 
+      src="/Frame3.svg"  // путь к вашему изображению
+      alt="Buy on STON.fi"
+      className={styles.buttonImage1}
+    />
+  </a>
+</div>
     </div>
   );
 }

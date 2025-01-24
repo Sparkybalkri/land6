@@ -18,7 +18,7 @@
 }
 
 .rightButton {
-  margin-left: 690px;
+  margin-left: 790px;
 }
 
 .link {
@@ -91,4 +91,30 @@
   .rightButton {
     margin-left: 0;
   }
+}
+.button1 {
+  width: 141px;
+  height: 38px;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  transition: transform 0.1s ease;
+  margin-right: 40px;
+}
+
+.button1:hover {
+  transform: scale(1.05);
+}
+
+.buttonImage1 {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  pointer-events: none; /* Важно! Это предотвратит проблемы с кликабельностью */
+}
+
+.rightButtons {
+  display: flex;
+  justify-content: flex-end;
+  position: relative
 }

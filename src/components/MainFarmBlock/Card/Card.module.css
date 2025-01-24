@@ -23,24 +23,18 @@
 
 .cardOverlay {
   position: absolute;
-  width: 516px; /* Размер из Figma */
+  width: 334px; /* Размер из Figma */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   box-shadow: 0 0 44px rgba(255, 132, 0, 0.5);
-  border-radius: 16px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #FFA400 0%, #FF5C00 100%);
 }
 
-.boostTag {
-  position: absolute;
-  width: 334px; /* Размер из Figma */
-  padding: 16px 28px;
-  background: linear-gradient(90deg, #FFA400 0%, #FF5C00 100%);
-  border-radius: 12px;
-  box-shadow: 0 0 44px rgba(255, 132, 0, 0.5);
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
+.cardOverlay img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }

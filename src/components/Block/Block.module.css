@@ -36,8 +36,8 @@
 }
 
 .purpleShadow {
-  left: 5%;
-  top: 45%;
+  left: 0%;
+  top: 42%;
   transform: translateY(-50%);
 }
 
@@ -58,6 +58,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-left: -80px; /* Добавляем отрицательный отступ слева */
+  
 }
 
 .rightSide {
@@ -124,6 +126,18 @@
   width: 299px;
   height: auto;
   cursor: pointer;
+  text-decoration: none;
+  display: block;
+  transition: transform 0.1s ease;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+.buttonImage {
+  width: 100%;
+  height: auto;
 }
 
 /* @keyframes floatRocket {

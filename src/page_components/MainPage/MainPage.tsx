@@ -9,11 +9,12 @@ import FiftyMBlock from "../../components/MainContentBlock/FiftyMBlock/FiftyMBlo
 // import LinksBlock from '../../components/MainContentBlock/LinksBlock/LinksBlock';
 import MainTasksBlock from '../../components/MainTasksBlock/MainTasksBlock';
 import MainPageBlock from '../../components/MainPageBlock/MainPageBlock';
-import MainFarmBlock from '../../components/MainFarmBlock/MainFarmBlock';
+// import MainFarmBlock from '../../components/MainFarmBlock/MainFarmBlock';
 import PrimaryContainer from '../../components/PrimaryContainer/PrimaryContainer';
 import MainContentBlock from '../../components/MainContentBlock/MainContentBlock';
 import {Block} from '../../components/Block/Block';
 // import { LinksBlock } from '../../components/LinksBlock/LinksBlock';
+import MainBlock from '../../components/MainBlock/MainBlock';
 
 const MainPage = (): JSX.Element => {
   return (
@@ -32,7 +33,8 @@ const MainPage = (): JSX.Element => {
         {/* <LinksBlock />  */}
         <MainTasksBlock/>
         <MainPageBlock />
-        <MainFarmBlock/>
+        {/* <MainFarmBlock/> */}
+        <MainBlock />
         <PrimaryContainer/> 
         {/* <LinksBlock/> */}
       </div>

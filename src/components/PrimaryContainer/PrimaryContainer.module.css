@@ -60,4 +60,6 @@
     width: 40px;
     height: 40px;
   }
-  
+  .button:hover {
+    transform: scale(1.05);
+  }

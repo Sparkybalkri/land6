@@ -61,11 +61,18 @@ export const Block = () => {
     alt="Description" 
     className={styles.description}
   />
-  <img 
-    src="/Frame 2087326523.svg" 
-    alt="Play in Telegram" 
+  <a 
+    href="https://t.me/turboton_farm_bot" 
+    target="_blank" 
+    rel="noopener noreferrer" 
     className={styles.button}
-  />
+  >
+    <img 
+      src="/Frame 2087326523.svg" 
+      alt="Play in Telegram" 
+      className={styles.buttonImage}
+    />
+  </a>
 </div>
           </div>
         </div>

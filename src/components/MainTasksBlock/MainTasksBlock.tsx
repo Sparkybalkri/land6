@@ -1,23 +1,107 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import styles from './MainTasksBlock.module.css';
 
-const MainTasksBlock = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
+interface TypewriterTextProps {
+  text: string;
+  delay?: number;
+  isVisible: boolean;
+}
+
+const TypewriterText: React.FC<TypewriterTextProps> = ({ text, delay = 0, isVisible }) => {
+  return (
+    <span className={styles.textWrapper}>
+      {text.split('').map((char: string, index: number) => (
+        <span
+          key={index}
+          className={`${styles.character} ${isVisible ? styles.visible : ''}`}
+          style={{ 
+            animationDelay: `${delay + index * 0.01}s`,
+            whiteSpace: 'pre'  
+          }}
+        >
+          {char}
+        </span>
+      ))}
+    </span>
+  );
+};
+
+const MainTasksBlock: React.FC = () => {
+  const [scrollPosition, setScrollPosition] = useState<number>(0);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const textRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = (): void => {
       setScrollPosition(window.scrollY);
     };
+
+    const observer = new IntersectionObserver(
+      ([entry]: IntersectionObserverEntry[]) => {
+        if (entry.isIntersecting && !isVisible) {
+          setIsVisible(true);
+        }
+      },
+      {
+        threshold: 0.1
+      }
+    );
+
+    if (textRef.current) {
+      observer.observe(textRef.current);
+    }
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (textRef.current) {
+        observer.unobserve(textRef.current);
+      }
+    };
+  }, [isVisible]);
 
   return (
     <div className={styles.mainContainer}>
       <div className={styles.mainSection}>
         <div className={styles.leftColumn}>
-          <div className={styles.textContent}>
-            <img src="/Frame 2087326519.svg" alt="TurboTon Farm" className={styles.svgImage} />
+          <div className={styles.textContent} ref={textRef}>
+            <h1 className={styles.title}>
+              <TypewriterText 
+                text="Complete"
+                delay={0.02}
+                isVisible={isVisible}
+              />
+              <TypewriterText 
+                text="In-Game Tasks"
+                delay={0.02}
+                isVisible={isVisible}
+              />
+              <TypewriterText 
+                text="and Get Bonus"
+                delay={0.05}
+                isVisible={isVisible}
+              />
+              <TypewriterText 
+                text="Stardust"
+                delay={0.05}
+                isVisible={isVisible}
+              />
+            </h1>
+            <p className={styles.description}>
+              <TypewriterText 
+                text="There are different types of Tasks in game. By completing tasks you can increase your Stardust points or increase your Farming speed."
+                delay={0.02}
+                isVisible={isVisible}
+              />
+            </p>
+            <p className={styles.description}>
+              <TypewriterText 
+                text="Also you can find tasks with a drawing of cash prizes and increase your chances to win more."
+                delay={1}
+                isVisible={isVisible}
+              />
+            </p>
           </div>
         </div>
         <div className={styles.middleColumn}>

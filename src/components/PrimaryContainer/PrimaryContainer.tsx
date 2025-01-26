@@ -26,8 +26,9 @@ const PrimaryContainer: React.FC = () => {
     />
   </a>
       </div>
-
+      
       <div className={styles.footer}>
+      <div className={styles.fullWidthBorder}></div>
         <h2>Welcome to the Fam! 🐸💕</h2>
         {/* <div className={styles.socialIcons}>
           <img src="Group 195.png" alt="Telegram" />

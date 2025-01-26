@@ -4,7 +4,7 @@
     justify-items: center; /* Выравнивание по центру по горизонтали */
     align-items: start; /* Выравнивание по вертикали */
     text-align: center;
-    margin-top: 70px; /* Отступ сверху */
+    margin-top: 5%; /* Отступ сверху */
     width: 100%;
     height: 10%; /* Устанавливает высоту контейнера */
     z-index: 5;

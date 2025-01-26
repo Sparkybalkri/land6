@@ -16,11 +16,11 @@ const MainBlock = () => {
   }, []);
 
   const boostStyle = {
-    transform: `translate(-50%, calc(-358% + ${-scrollPosition * 0.1}px))`,
+    transform: `translate(-50%, calc(-363% + ${-scrollPosition * 0.1}px))`,
   };
 
   const avatarStyle = {
-    transform: `translate(-0%, calc(-68% + ${-scrollPosition * 0.1}px))`,
+    transform: `translate(-0%, calc(-69% + ${-scrollPosition * 0.1}px))`,
   };
   
   

@@ -71,11 +71,13 @@
 }
 .backgroundImage {
   position: absolute;
-  width: 55%;
-  height: 120%;
+  width: 50%;
+  height: 125%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 0;  /* Это поместит изображение позади слайдера */
   pointer-events: none;
+  filter: brightness(150%);
+
 }

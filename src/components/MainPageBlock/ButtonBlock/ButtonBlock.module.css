@@ -2,12 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -2%;
+    margin-top: -8%;
     position: relative;
     z-index: 10;
+    right: 1%;
+    margin-top: 2%;
   }
   
-  .button {
+  .button3 {
     
     
     font-size: 18px;
@@ -23,4 +25,11 @@
   .button:hover{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     filter: brightness(0.9);
+  }
+
+  .buttonImage{
+    width: 120%;
+    
+
+    
   }

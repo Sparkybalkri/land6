@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   background-image: url('/violet-bg.png');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -141,8 +141,3 @@
   font-family: 'Manrope', sans-serif;
 }
 
-@media screen and (max-width: 768px) {
-  .mainContainer {
-    background-position: right center;
-  }
-}

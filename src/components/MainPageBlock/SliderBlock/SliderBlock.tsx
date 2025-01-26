@@ -3,11 +3,11 @@ import React, { useState, useEffect } from 'react';
 import styles from './SliderBlock.module.css';
 
 const images = [
-  '/image1.png',
-  '/image2.png',
-  '/image3.png',
-  '/image4.png',
-  '/image5.png',
+  '/Group 122.svg',
+  '/Group 143.svg',
+  '/Group 144.svg',
+  '/Group 145.svg',
+  '/Group 146.svg',
 ];
 
 const helmets = [

@@ -54,13 +54,17 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  
 }
 
 .gecko {
-  position: relative;
+  position: absolute;
   z-index: 2;
   width: 298.59px;
   height: 444.82px;
+  
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .tasksBackground {
@@ -68,10 +72,10 @@
   z-index: 1;
   width: 685px;
   height: 496px;
-  right: -325px;
-  transform: translateY(200px); /* Начальная позиция ниже */
+  transform: translateY(50%); /* Начальная позиция ниже */
   transition: transform 0.3s ease-out;
   object-fit: contain;
+  right: calc(50% - 298.59px / 2 - 580px);
 }
 
 .svgImage {
@@ -83,7 +87,7 @@
 .textContent {
   max-width: 460px;
   max-height: 432px;
-  margin-right: -210px;
+  margin-right: calc(298.59px - 55%);
   margin-top: -150px;
 }
 

@@ -8,6 +8,7 @@ const MainBlock = () => {
   useEffect(() => {
     const handleScroll = () => {
       setScrollPosition(window.scrollY);
+      console.log('Scroll position:', window.scrollY);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -15,11 +16,11 @@ const MainBlock = () => {
   }, []);
 
   const boostStyle = {
-    transform: `translate(-50%, ${-scrollPosition * 0.3}px)`,
+    transform: `translate(-50%, calc(-358% + ${-scrollPosition * 0.1}px))`,
   };
 
   const avatarStyle = {
-    transform: `translateY(${-scrollPosition * 0.3}px)`,
+    transform: `translate(-0%, calc(-68% + ${-scrollPosition * 0.1}px))`,
   };
   
   

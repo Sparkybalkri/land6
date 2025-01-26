@@ -4,6 +4,7 @@ import Slider from "./Slider/Slider";
 import TextBlockw from './TextBlockw/TextBlockw';
 import { LinksBlock } from '../../components/LinksBlock/LinksBlock';
 
+
 const PrimaryContainer: React.FC = () => {
   return (
     <div className={styles.primaryContainer}>

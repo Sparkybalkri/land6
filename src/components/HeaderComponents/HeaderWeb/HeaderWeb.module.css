@@ -1,0 +1,61 @@
+.header {
+	display: grid;
+	align-items: center;
+	margin-left: -10px;
+	width: 95%;
+	padding: 20px 0;
+	grid-template-columns: auto auto 1fr auto;
+	gap: 52px;
+}
+
+.headerLink {
+	display: grid;
+
+	width: fit-content;
+
+	cursor: pointer;
+}
+
+.headerLink > h1 {
+	transition-duration: 300ms;
+	color: var(--white); /* Добавьте эту строку */
+	font-weight: 600;
+}
+
+.headerLink:active > h1 {
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	color: var(--primary);
+}
+
+.headerButton {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+	.headerLink:hover > h1 {
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+		color: var(--primary);
+	}
+}
+
+@media (max-width: 1400px) {
+	.header {
+		width: 90%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.headerButton {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}
+
+@media (max-width: 800px) {
+	.header {
+		display: none;
+	}
+}

@@ -3,18 +3,24 @@
     justify-content: center;
     align-items: center;
     margin-top: -2%;
+    position: relative;
+    z-index: 10;
   }
   
   .button {
     
     
     font-size: 18px;
-    padding: 15px 30px;
+    
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
   
-  .button:hover {
+  /* .button:hover {
     transform: scale(1.05);
+  } */
+  .button:hover{
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    filter: brightness(0.9);
   }

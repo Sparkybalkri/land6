@@ -111,8 +111,8 @@ const MainTasksBlock: React.FC = () => {
               alt="Tasks Background" 
               className={styles.tasksBackground}
               style={{
-                transform: `translateY(${0 - scrollPosition / 10}px)`,
-                transition: "transform 0.3s ease-out",
+                transform: `translate(-0%, calc(8% + ${-scrollPosition * 0.08}px))`,
+                
               }}
             />
             <div className={styles.gecko}>

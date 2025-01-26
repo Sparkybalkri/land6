@@ -1,0 +1,86 @@
+.button {
+	display: grid;
+	align-items: center;
+
+	width: fit-content;
+	height: fit-content;
+	padding: 20px;
+
+	cursor: pointer;
+	transition-duration: 300ms;
+
+	border: none;
+
+	border-radius: 16px;
+	background: var(--primary);
+	justify-items: center;
+	grid-template-columns: auto;
+}
+
+.button:active {
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	filter: brightness(0.9);
+}
+
+.whiteButton {
+	background: var(--white);
+}
+
+.grayButton {
+	background: var(--light);
+}
+
+.chartButton {
+	background: var(--chartBtn);
+}
+
+.iconButton {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.iconButton > svg {
+	width: 22px;
+	fill: var(--white);
+}
+
+.sizeS {
+	border-radius: 10px;
+}
+
+.text {
+	color: var(--white);
+
+	font-weight: 500;
+}
+
+.whiteButton > .text,
+.grayButton > .text {
+	color: var(--black) !important;
+}
+
+@media (min-width: 1024px) {
+	.button:hover {
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		filter: brightness(0.9);
+	}
+}
+
+@media (max-width: 1024px) {
+	.button {
+		padding-top: 18px;
+		padding-bottom: 18px;
+	}
+}
+
+@media (max-width: 580px) {
+	.button {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	.iconButton > svg {
+		width: 22px;
+	}
+}

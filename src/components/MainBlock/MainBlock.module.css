@@ -36,6 +36,7 @@
     width: 100%;
     max-width: 500px;
     margin-bottom: 0px; 
+
 }
 
 .baseCard {
@@ -52,10 +53,12 @@
     width: 663px;
     Height : 176px;
     z-index: 2;
+    
+
 }
 .rightBoostCard {
     position: absolute;
-    bottom: -145%; /* Ниже чем левая */
+    bottom: -234%; /* Ниже чем левая */
     left: 50%;
     transform: translateX(-50%);
     width: 665px;

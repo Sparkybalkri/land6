@@ -101,10 +101,13 @@
   transition: transform 0.1s ease;
   margin-right: 40px;
 }
-
-.button1:hover {
-  transform: scale(1.05);
+.button:hover{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  filter: brightness(0.9);
 }
+/* .button1:hover {
+  transform: scale(1.05);
+} */
 
 .buttonImage1 {
   width: 100%;

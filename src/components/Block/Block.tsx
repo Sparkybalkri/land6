@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import styles from './Block.module.css';
 import Buttons from '../Buttons/Buttons';
 import {LinksBlock} from '../LinksBlock/LinksBlock';
-
+import { Header } from '../../components/HeaderComponents/Header/Header';
 
 export const Block = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -18,8 +18,8 @@ export const Block = () => {
   return (
     <div className={styles.block}>
       <div className={styles.container}>
-        
-          <Buttons />
+        <Header/>
+          {/* <Buttons /> */}
         
         
         {/* Тени */}
@@ -37,7 +37,7 @@ export const Block = () => {
             <div 
               className={styles.iphone}
               style={{
-                transform: `translateY(${-scrollPosition / 10}px)`
+                transform: `translate(-0%, calc(0% + ${-scrollPosition * 0.06}px))`,
               }}
             >
               <img src="/iphone 1.svg" alt="iPhone" />

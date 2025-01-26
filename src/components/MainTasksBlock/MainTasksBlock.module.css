@@ -140,3 +140,25 @@
   margin: 16px 0;
   font-family: 'Manrope', sans-serif;
 }
+
+@media screen and (max-width: 768px) {
+  /* Стили для мобильных устройств */
+  .contentWrapper {
+    flex-direction: column;
+  }
+  
+  .gecko {
+    position: static;
+    margin: 0 auto;
+  }
+  
+  .tasksBackground {
+    position: static;
+    margin: 20px auto;
+  }
+  
+  .textContent {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}

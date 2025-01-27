@@ -18,7 +18,7 @@
 
 .headerLink > h1 {
 	transition-duration: 300ms;
-	color: var(--white)!important; /* Добавьте эту строку */
+	color: var(--white); /* Добавьте эту строку */
 	font-weight: 600;
 }
 

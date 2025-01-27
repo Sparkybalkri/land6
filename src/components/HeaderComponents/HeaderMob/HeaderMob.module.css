@@ -22,7 +22,7 @@
 
 	cursor: pointer;
 	transition-duration: 300ms;
-	fill: var(--white) !important;
+	fill: var(--white);
 }
 
 .icon:active {
@@ -55,7 +55,7 @@
 
 .headerLink > h1 {
 	transition-duration: 300ms;
-	color: var(--white) !important; /* Добавляем !important */
+
 	font-weight: 700;
 }
 
@@ -74,7 +74,4 @@
 	.header {
 		display: none;
 	}
-}
-.headerButton .text {
-    color: var(--white) !important;
 }

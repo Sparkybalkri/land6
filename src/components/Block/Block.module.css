@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   margin-left: -80px;
-  margin-top: 1%;
+  margin-top: 0%;
 }
 
 .container {
@@ -63,7 +63,7 @@
   align-items: center;
   justify-content: flex-end;
   margin-left: -80px; /* Добавляем отрицательный отступ слева */
-  
+  z-index: 1;
 }
 
 .rightSide {
@@ -74,11 +74,14 @@
   gap: 24px;
   margin-left: 380px;
   transform: translateY(0px);
+  z-index: 2;
 }
 
 .iphone {
   position: relative;
-  width: 500px!important;
+  width: 948px !important;
+  height: 708px !important;
+  object-fit: contain;
   z-index: 3;
   transform: translateY(0);
   transition: transform 0.3s ease-out;
@@ -88,6 +91,7 @@
 .iphone {
   .iphone[data-scroll] {
     transform: translate(0, var(--scroll-offset));
+    position: relative;
   }
 }
 .fifty {
@@ -113,8 +117,8 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  z-index: 2;
-  
+  z-index: 3;
+  position: relative;
   margin-top: 300px;
   margin-left: -50px;
   
@@ -138,10 +142,15 @@
   text-decoration: none;
   display: block;
   transition: transform 0.1s ease;
+  position: absolute;
+  z-index: 900;
+  margin-top: 100%;
 }
 .button:hover{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   filter: brightness(0.9);
+  position: absolute;
+  z-index: 900;
 }
 /* .button:hover {
   transform: scale(1.05);
@@ -150,6 +159,8 @@
 .buttonImage {
   width: 100%;
   height: auto;
+  position: absolute;
+  z-index: 900;
 }
 
 /* @keyframes floatRocket {

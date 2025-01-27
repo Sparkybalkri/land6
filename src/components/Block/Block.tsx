@@ -40,14 +40,14 @@ export const Block = () => {
                 transform: `translate(-0%, calc(0% + ${-scrollPosition * 0.1}px))`,
               }}
             >
-              <img src="/iphone 1.svg" alt="iPhone" />
+              <img src="/iphone 1 (1).webp" alt="iPhone" />
             </div>
           </div>
 
           <div className={styles.rightSide}>
             {/* Ракета между телефоном и текстом */}
             <div className={styles.rocket}>
-              <img src="/Group 28.svg" alt="Rocket" />
+              <img src="/Group 28 (2).webp" alt="Rocket" />
             </div>
 
             <div className={styles.textBlock}>

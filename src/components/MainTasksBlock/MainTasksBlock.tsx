@@ -79,7 +79,7 @@ const MainTasksBlock: React.FC = () => {
               />
               <TypewriterText 
                 text="Bonus Stardust"
-                delay={0.05}
+                delay={0.03}
                 isVisible={isVisible}
               />
 
@@ -87,28 +87,28 @@ const MainTasksBlock: React.FC = () => {
             <p className={styles.description}>
   <TypewriterText 
     text="There are different types of Tasks in game. By completing tasks you"
-    delay={0.02}
+    delay={0.01}
     isVisible={isVisible}
   />
 </p>
 <p className={styles.description}>
   <TypewriterText 
     text="can increase your Stardust points or increase your Farming speed."
-    delay={0.02}
+    delay={0.01}
     isVisible={isVisible}
   />
 </p>
 <p className={`${styles.description} ${styles.secondParagraph}`}>
   <TypewriterText 
     text="Also you can find tasks with a drawing of cash prizes and increase"
-    delay={1}
+    delay={0.5}
     isVisible={isVisible}
   />
 </p>
 <p className={styles.description}>
   <TypewriterText 
     text="your chances to win more."
-    delay={1}
+    delay={0.5}
     isVisible={isVisible}
   />
 </p>

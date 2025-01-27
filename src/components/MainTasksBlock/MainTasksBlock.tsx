@@ -68,40 +68,50 @@ const MainTasksBlock: React.FC = () => {
           <div className={styles.textContent} ref={textRef}>
             <h1 className={styles.title}>
               <TypewriterText 
-                text="Complete"
+                text="Complete In-Game"
                 delay={0.02}
                 isVisible={isVisible}
               />
               <TypewriterText 
-                text="In-Game Tasks"
+                text="Tasks and Get Bonus"
                 delay={0.02}
                 isVisible={isVisible}
               />
               <TypewriterText 
-                text="and Get Bonus"
+                text="Bonus Stardust"
                 delay={0.05}
                 isVisible={isVisible}
               />
-              <TypewriterText 
-                text="Stardust"
-                delay={0.05}
-                isVisible={isVisible}
-              />
+
             </h1>
             <p className={styles.description}>
-              <TypewriterText 
-                text="There are different types of Tasks in game. By completing tasks you can increase your Stardust points or increase your Farming speed."
-                delay={0.02}
-                isVisible={isVisible}
-              />
-            </p>
-            <p className={styles.description}>
-              <TypewriterText 
-                text="Also you can find tasks with a drawing of cash prizes and increase your chances to win more."
-                delay={1}
-                isVisible={isVisible}
-              />
-            </p>
+  <TypewriterText 
+    text="There are different types of Tasks in game. By completing tasks you"
+    delay={0.02}
+    isVisible={isVisible}
+  />
+</p>
+<p className={styles.description}>
+  <TypewriterText 
+    text="can increase your Stardust points or increase your Farming speed."
+    delay={0.02}
+    isVisible={isVisible}
+  />
+</p>
+<p className={`${styles.description} ${styles.secondParagraph}`}>
+  <TypewriterText 
+    text="Also you can find tasks with a drawing of cash prizes and increase"
+    delay={1}
+    isVisible={isVisible}
+  />
+</p>
+<p className={styles.description}>
+  <TypewriterText 
+    text="your chances to win more."
+    delay={1}
+    isVisible={isVisible}
+  />
+</p>
           </div>
         </div>
         <div className={styles.middleColumn}>

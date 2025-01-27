@@ -86,10 +86,13 @@
 }
 
 .textContent {
-  max-width: 460px;
+  max-width: 550px;
   max-height: 432px;
-  margin-right: calc(298.59px - 55%);
-  margin-top: -150px;
+  margin-right: calc(298.59px - 60%);
+  margin-top: -140px;
+  font-weight: 400;
+  font-family: 'Manrope', sans-serif;
+
 }
 
 .bottomText {
@@ -131,14 +134,19 @@
   font-size: 56px;
   line-height: 64px;
   margin: 0;
+  font-weight: 500;
   font-family: 'Manrope', sans-serif;
+  margin-bottom: 40px;
 }
 
 .description {
   color: white;
   font-size: 16px;
   line-height: 24px;
-  margin: 16px 0;
+  margin: 2px 0;
   font-family: 'Manrope', sans-serif;
 }
 
+.secondParagraph {
+  margin-top: 20px; /* Отступ между параграфами */
+}

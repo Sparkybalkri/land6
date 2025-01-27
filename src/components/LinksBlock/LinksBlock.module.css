@@ -6,6 +6,7 @@
 	justify-items: center;
 	margin-bottom: 0px;
 	margin-top: 200px; /* Добавляем отступ сверху */
+	z-index: 1;
 }
 
 

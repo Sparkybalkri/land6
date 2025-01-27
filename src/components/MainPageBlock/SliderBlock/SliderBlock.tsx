@@ -1,6 +1,7 @@
 // SliderBlock.tsx
 import React, { useState, useEffect } from 'react';
 import styles from './SliderBlock.module.css';
+import Image from 'next/image';
 
 const images = [
   '/image1.webp',
@@ -57,10 +58,13 @@ const SliderBlock = () => {
       >
         {images.map((image, index) => (
           <div key={index} className={styles.slideContainer}>
-            <img
+            <Image key={index} className={styles.slideContainer} draggable="false"
+              loader={() => image}
               src={image}
               alt={`Slide ${index + 1}`}
-              className={styles.image}
+              width={1}
+              height={1}
+              unoptimized={true}
             />
             {index === currentImage && (
               <>

@@ -23,8 +23,6 @@ const MainPage = (): JSX.Element => {
     <>
       <Toaster position="top-center" reverseOrder={true} toastOptions={{ duration: 2000 }} />
       <div className={styles.parentContainer}>
-      {/* <Header/> */}
-      {/* <Buttons /> */}
         <Block />
         {/* <LinksBlock/> */}
 
@@ -33,11 +31,11 @@ const MainPage = (): JSX.Element => {
         <PhoneBlock />
         <FiftyMBlock /> */}
         {/* <LinksBlock />  */}
-        <MainTasksBlock/>
-        <MainPageBlock />
+        {/* <MainTasksBlock/>
+        <MainPageBlock /> */}
         {/* <MainFarmBlock/> */}
-        <MainBlock />
-        <PrimaryContainer/> 
+        {/* <MainBlock />
+        <PrimaryContainer/>  */}
         {/* <LinksBlock/> */}
       </div>
     </>

@@ -69,9 +69,7 @@ export const HeaderMob = (): JSX.Element => {
     };
 
     return (
-        <header className={cn(styles.header, {
-            [styles.openHeader]: isOpen,
-        })} ref={headerRef}>
+        <header className={styles.header} ref={headerRef}>
             <Icon className={styles.icon} onClick={() => setIsOpen(!isOpen)} />
             <Button className={styles.headerButton} text={setLocale(router.locale).buy_on_stonfi}
                 type='primary' size='s' onClick={() => window.open(link4, '_blank')} />

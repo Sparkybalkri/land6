@@ -1,8 +1,7 @@
 .header {
 	display: grid;
 	align-items: center;
-	margin-left: -10px;
-	width: 95%;
+	width: 90% !important;
 	padding: 20px 0;
 	grid-template-columns: auto auto 1fr auto;
 	gap: 52px;

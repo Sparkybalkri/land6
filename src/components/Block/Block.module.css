@@ -17,7 +17,7 @@
   position: relative;
   width: 100%;
   max-width: 1440px;
-  padding: 50px 20px 130px; /* Увеличиваем верхний отступ для кнопок */
+  padding: 50px 20px 100px; /* Увеличиваем верхний отступ для кнопок */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -72,7 +72,8 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-  margin-left: 380px;
+  margin-left: -40px;
+  
   transform: translateY(0px);
   z-index: 2;
 }
@@ -107,20 +108,20 @@
 .rocket {
   position: absolute;
   width: 200px;
-  top: 0%;
-  right: 127%;
+  top: -4%;
+  right: 131%;
   z-index: 4;
-  transform: translateY(47%); /* Центрируем ракету относительно текста */
+  transform: translateY(23%); /* Центрируем ракету относительно текста */
 }
 
 .textBlock {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 100px;
   z-index: 3;
   position: relative;
-  margin-top: 300px;
-  margin-left: -50px;
+  margin-top: 188px;
+  margin-left: -52px;
   
 }
 
@@ -144,7 +145,7 @@
   transition: transform 0.1s ease;
   position: absolute;
   z-index: 900;
-  margin-top: 100%;
+  margin-top: 118%;
 }
 .button:hover{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

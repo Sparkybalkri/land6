@@ -47,7 +47,7 @@ export const Block = () => {
           <div className={styles.rightSide}>
             {/* Ракета между телефоном и текстом */}
             <div className={styles.rocket}>
-              <img src="/Group 28 (2).webp" alt="Rocket" />
+              <img src="/Group 28.svg" alt="Rocket" />
             </div>
 
             <div className={styles.textBlock}>

@@ -37,7 +37,7 @@ export const Block = () => {
             <div 
               className={styles.iphone}
               style={{
-                transform: `translate(-0%, calc(0% + ${-scrollPosition * 0.06}px))`,
+                transform: `translate(-0%, calc(0% + ${-scrollPosition * 0.1}px))`,
               }}
             >
               <img src="/iphone 1.svg" alt="iPhone" />

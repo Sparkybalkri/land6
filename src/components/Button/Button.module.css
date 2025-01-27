@@ -57,7 +57,7 @@
 
 .whiteButton > .text,
 .grayButton > .text {
-	color: var(--black) !important;
+	color: var(--white) !important;
 }
 
 @media (min-width: 1024px) {

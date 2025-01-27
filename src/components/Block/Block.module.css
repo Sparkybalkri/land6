@@ -78,14 +78,18 @@
 
 .iphone {
   position: relative;
-  width: 500px;
+  width: 500px!important;
   z-index: 3;
   transform: translateY(0);
   transition: transform 0.3s ease-out;
   top: 125px;
   left:0px;
 }
-
+.iphone {
+  .iphone[data-scroll] {
+    transform: translate(0, var(--scroll-offset));
+  }
+}
 .fifty {
   position: absolute;
   width: 400px;

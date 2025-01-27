@@ -4,17 +4,80 @@ import Buttons from '../Buttons/Buttons';
 import {LinksBlock} from '../LinksBlock/LinksBlock';
 import { Header } from '../../components/HeaderComponents/Header/Header';
 
+
 export const Block = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
-
+  const [isMobile, setIsMobile] = useState(false);
+  
   useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 800);
+    };
+
     const handleScroll = () => {
       setScrollPosition(window.scrollY);
     };
+
+    handleResize(); // Начальная проверка
+    window.addEventListener('resize', handleResize);
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, []);
 
+  if (isMobile) {
+    return (
+      <div className={styles.mobileBlock}>
+        <div className={styles.mobileHeader}>
+          <Header/>
+        </div>
+
+        <div className={styles.mobileLogo}>
+          <img 
+            src="/Group 127.svg" 
+            alt="TurboTon Farm" 
+          />
+        </div>
+
+        <div className={styles.mobileDescription}>
+          <img 
+            src="/Collect more stardust and take a part in distribution of 50 M TurboTON tokens.svg" 
+            alt="Description" 
+          />
+        </div>
+
+        <div className={styles.mobileTelegram}>
+          <a 
+            href="https://t.me/turboton_farm_bot" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+          >
+            <img 
+              src="/Frame 2087326523.svg" 
+              alt="Play in Telegram" 
+            />
+          </a>
+        </div>
+
+        <div className={styles.mobilePhone}>
+          <img src="/img-phone (1).webp" alt="iPhone" />
+        </div>
+
+        <div className={styles.mobileFifty}>
+          <img src="/50M.svg" alt="50M" />
+        </div>
+
+        <div className={styles.mobileLinks}>
+          <LinksBlock />
+        </div>
+      </div>
+    );
+  }
+
+  // Ваш существующий код для десктопной версии
   return (
     <div className={styles.block}>
       <div className={styles.container}>
@@ -82,6 +145,8 @@ export const Block = () => {
   );
 };
 
+
+ 
 export default Block;
 
 

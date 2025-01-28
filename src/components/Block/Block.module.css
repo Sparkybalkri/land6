@@ -8,6 +8,7 @@
   position: relative;
   overflow: hidden;
   padding-bottom: 100px;
+  
 }
 
 .cyanShadow,
@@ -16,28 +17,31 @@
   pointer-events: none;
   transform: translateY(-50%);
   z-index: 0;
+  
 }
 
 .cyanShadow {
-  right: -10%;
-  top: 72%;
+  right: 22%;
+  top: 61%;
 }
 
 .purpleShadow {
-  left: -2%;
-  top: 50%;
+  left: 19%;
+  top: 42%;
 }
 
 .cointainer {
   display: grid;
-  width: 70%;
+  width: 90%; /* вместо 70% */
+  max-width: 1440px; /* добавляем максимальную ширину */
+  margin: 0 auto; /* центрируем */
   height: fit-content;
   grid-template-columns: 50% 1fr;
-  margin-top: 140px;
+  margin-top: 220px;
   align-items: end;
   justify-self: center;
   grid-template-areas: "leftBlock rightBlock";
-  gap: 100px;
+  gap: 2rem; /* используем rem вместо px */
 }
 
 .leftBlock,
@@ -50,47 +54,75 @@
   width: fit-content;
   grid-area: leftBlock;
   position: relative;
+  left: 10%;
 }
 
 .rightBlock {
   display: grid;
+  width: 10 0%;
   gap: 48px;
   grid-template-columns: auto;
   justify-items: left;
   grid-area: rightBlock;
 }
-
+.blockButton {
+  width: 34% !important;
+}
 .fiftyImage {
-  width: 70%;
+  width: 60%;
   height: fit-content;
   z-index: 1;
+  margin-top: 50%;
+  margin-left: -5%;
 }
 
 .logoDiv {
   display: grid;
-  width: 100%;
+  width: 76%;
   position: relative;
+  left: 0%;
+  top: -2%;
 }
 
 .logoDiv > svg {
   width: 100%;
+  border: 1px solid blue;
 }
-
-.lizardImage {
-  width: 380px;
+.turbo{
+  width: 80%;
   height: fit-content;
   position: absolute;
-  left: -220px;
+  left: 0px;
   top: -90px;
-}
+  z-index: 1;
 
+
+}
+.lizardImage {
+  width: 80%;
+  height: fit-content;
+  position: absolute;
+  left: -210px;
+  top: -175px;
+  z-index: 2;
+}
+  .text{
+    width: 45%;
+    margin-left: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    margin-top: 10%;
+  }
 .phoneImage {
   z-index: 2;
-  width: 550px;
+  width: 130%;
+  
   height: fit-content;
   position: absolute;
-  left: 0;
+  left: -11%;
   bottom: 0;
+  top: -15%;
+  
 }
 
 @media (max-width: 1400px) {
@@ -99,7 +131,10 @@
     left: -200px;
     top: -70px;
   }
+  .text{
+    width: 100%;
   
+  }
   .phoneImage {
     width: 500px;
     left: 0;
@@ -114,27 +149,54 @@
       "rightBlock"
       "leftBlock";
     justify-items: center;
-    gap: 40px;
+    gap: 80px;
 	}
-
+  .purpleShadow {
+    width: 150%;
+    height: 100%;
+    left: -9%;
+    top: 79%;
+  }
   .leftBlock {
     height: 700px !important;
     align-items: end;
-    overflow: hidden;
+    
     width: 100%;
+    left: 0;
   }
-
+  .turbo{
+    width: 75%;
+    height: fit-content;
+    position: absolute;
+    left: 110px;
+    top: -110px;
+    z-index: 1;
+  
+  
+  }
   .rightBlock {
     width: 90%;
+    
   }
-  
+  .text{
+    width: 40%;
+    margin-left: 30%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+  }
+
   .rightBlock > h1 {
     text-align: center;
+  
   }
 
   .fiftyImage {
-    width: 50%;
+    width: 65%;
     height: fit-content;
+    top: 12%;
+    position: relative;
+    z-index: 1;
+    left: 2%;
   }
 
   .blockButton {
@@ -143,46 +205,614 @@
 
   .logoDiv {
     justify-items: right;
-  }
-
-  .lizardImage {
-    width: 300px;
-    left: 0;
-    top: -20px;
+    left:20%;
+    margin-top: -2%;
   }
 
   .logoDiv > svg {
     width: 70%;
     justify-self: right;
   }
-
+  .lizardImage {
+    width: 340px;
+    left: -22%;
+    top: -150px;
+  }
   .phoneImage {
-    width: 130%;
-    left: -20%;
-    z-index: 0;
+    width: 155%;
+    left: -5%;
+    top: 5%;
+    z-index: 2;
   }
 }
+
+
+@media (max-width: 700px) {
+  .leftBlock {
+    height: 650px !important;
+    
+  }
+  .cointainer {
+    width: 98%;
+		height: 70%;
+    grid-template-columns: auto;
+    grid-template-areas: 
+      "rightBlock"
+      "leftBlock";
+    justify-items: center;
+    gap: 80px;
+    margin-top: 0%;
+  }
+  .phoneImage {
+    width: 155%;
+    left: -7%;
+    top: -2%;
+    z-index: 2;
+  }
+  .fiftyImage {
+    width: 65%;
+    height: fit-content;
+    top: -2%;
+    position: relative;
+    z-index: 1;
+    left: 2%;
+  }
+  .rightBlock {
+    width: 90%;
+    top: -20%;
+  }
+  .logoDiv {
+    justify-items: right;
+   
+    left:10%;
+  }
+  .turbo{
+    width: 70%;
+    height: fit-content;
+    position: absolute;
+    left: 165px;
+    top: -90px;
+    z-index: 1;
+  
+  
+  }
+  .logoDiv > svg {
+    width: 65%;
+    justify-self: right;
+  }
+
+  .lizardImage {
+    width: 280px;
+    left: -9%;
+    top: -100px;
+  }
+
+}
+
+
 
 @media (max-width: 580px) {
   .leftBlock {
     height: 650px !important;
+    
   }
-}
+  .cointainer {
+    width: 100%;
+		height: 70%;
+    grid-template-columns: auto;
+    grid-template-areas: 
+      "rightBlock"
+      "leftBlock";
+    justify-items: center;
+    gap: 50px;
+    margin-top: 0%;
+  }
+  .phoneImage {
+    width: 155%;
+    left: -4%;
+    top: 8%;
+    z-index: 2;
+  }
+  .purpleShadow {
+    width: 150%;
+    height: 100%;
+    left: -35%;
+    top: 81%;
+  }
+  .fiftyImage {
+    width: 65%;
+    height: fit-content;
+    top: -14%;
+    position: relative;
+    z-index: 1;
+    left: 2%;
+  }
+  .rightBlock {
+    width: 90%;
+    top: -20%;
+  }
+  .logoDiv {
+    justify-items: right;
+   
+    left:10%;
+  }
+  .text{
+    width: 40%;
+    margin-left: 30%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+  }
+  .logoDiv > svg {
+    width: 65%;
+    justify-self: right;
+  }
+  .turbo{
+    width: 72%;
+    height: fit-content;
+    position: absolute;
+    left: 145px;
+    top: -90px;
+    z-index: 1;
+  
+  
+  }
+  .lizardImage {
+    width: 270px;
+    left: -8%;
+    top: -120px;
+  }
 
+}
+@media (max-width: 531px) {
+  .leftBlock {
+    height: 650px !important;
+    
+  }
+  .cointainer {
+    width: 100%;
+		height: 70%;
+    grid-template-columns: auto;
+    grid-template-areas: 
+      "rightBlock"
+      "leftBlock";
+    justify-items: center;
+    gap: 50px;
+    margin-top: 0%;
+  }
+  .phoneImage {
+    width: 165%;
+    left: -10%;
+    top: 10%;
+    z-index: 2;
+  }
+  .fiftyImage {
+    width: 75%;
+    height: fit-content;
+    top: -7%;
+    position: relative;
+    z-index: 1;
+    left: 2%;
+  }
+  .rightBlock {
+    width: 90%;
+    top: -20%;
+  }
+  .logoDiv {
+    justify-items: right;
+    margin-top: 14%;
+    left:10%;
+  }
+  .text{
+    width: 45%;
+    margin-left: 30%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    margin-top: 0%;
+  }
+  .logoDiv > svg {
+    width: 65%;
+    justify-self: right;
+  }
+  .turbo{
+    width: 75%;
+    height: fit-content;
+    position: absolute;
+    left: 145px;
+    top: -90px;
+    z-index: 1;
+  
+  
+  }
+  .lizardImage {
+    width: 270px;
+    left: -8%;
+    top: -120px;
+  }
+
+}
 @media (max-width: 500px) {
   .leftBlock {
     height: 500px !important;
   }
+  
+  .phoneImage {
+    width: 155%;
+    left: -8%;
+    top: 11%;
+    z-index: 2;
+  }
+  .fiftyImage {
+    width: 65%;
+    height: fit-content;
+    top: 2%;
+    position: relative;
+    z-index: 1;
+    left: 2%;
+  }
+  .rightBlock {
+    width: 90%;
+  }
+  .logoDiv {
+    justify-items: right;
+  
+    left:10%;
+  }
+
+  .logoDiv > svg {
+    width: 65%;
+    justify-self: right;
+  }
+  .turbo{
+    width: 72%;
+    height: fit-content;
+    position: absolute;
+    left: 145px;
+    top: -90px;
+    z-index: 1;
+  
+  
+  }
+  .lizardImage {
+    width: 250px;
+    left: -6%;
+    top: -110px;
+  }
+
 }
 
-@media (max-width: 400px) {
+
+
+
+
+@media (max-width: 415px) {
   .leftBlock {
     height: 400px !important;
   }
+  .leftBlock {
+    height: 500px !important;
+  }
+  .text{
+    width: 55%;
+    margin-left: 30%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+  }
+  .phoneImage {
+    width: 115%;
+    left: -8%;
+    top: 11%;
+    z-index: 2;
+  }
+  .fiftyImage {
+    width: 65%;
+    height: fit-content;
+    top: -7%;
+    position: relative;
+    z-index: 1;
+    left: 2%;
+  }
+  .rightBlock {
+    width: 90%;
+  }
+  .logoDiv {
+    justify-items: right;
+    
+    left:10%;
+  }
+
+  .logoDiv > svg {
+    width: 65%;
+    justify-self: right;
+  }
+  .turbo{
+    width: 72%;
+    height: fit-content;
+    position: absolute;
+    left: 145px;
+    top: -90px;
+    z-index: 1;
+  
+  
+  }
+  .lizardImage {
+    width: 240px;
+    left: -5%;
+    top: -30px;
+  }
+
+
+
+
 }
 
-@media (max-width: 300px) {
+@media (max-width: 376px) {
   .leftBlock {
     height: 350px !important;
   }
+  .leftBlock {
+    height: 400px !important;
+  }
+  .leftBlock {
+    height: 500px !important;
+  }
+  .text{
+    width: 60%;
+    margin-left: 26%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+  }
+  .phoneImage {
+    width: 115%;
+    left: -8%;
+    top: 11%;
+    z-index: 2;
+  }
+  .fiftyImage {
+    width: 65%;
+    height: fit-content;
+    top: -15%;
+    position: relative;
+    z-index: 1;
+    left: 2%;
+  }
+  .rightBlock {
+    width: 90%;
+  }
+  .logoDiv {
+    justify-items: right;
+   
+    left:10%;
+  }
+
+  .logoDiv > svg {
+    width: 65%;
+    justify-self: right;
+  }
+
+  .lizardImage {
+    width: 180px;
+    left: -5%;
+    top: -30px;
+  }
+
+
+
 }
+@media (max-width: 391px) {
+  .leftBlock {
+    height: 350px !important;
+  }
+  .leftBlock {
+    height: 400px !important;
+  }
+  .leftBlock {
+    height: 500px !important;
+  }
+  
+  .phoneImage {
+    width: 115%;
+    left: -8%;
+    top: 11%;
+    z-index: 2;
+  }
+  .fiftyImage {
+    width: 65%;
+    height: fit-content;
+    top: -15%;
+    position: relative;
+    z-index: 1;
+    left: 2%;
+  }
+  .rightBlock {
+    width: 90%;
+  }
+  .logoDiv {
+    justify-items: right;
+   
+    left:10%;
+  }
+
+  .logoDiv > svg {
+    width: 65%;
+    justify-self: right;
+  }
+
+  .lizardImage {
+    width: 180px;
+    left: -5%;
+    top: -30px;
+  }
+
+
+
+}
+@media (max-width: 431px) {
+  .leftBlock {
+    height: 350px !important;
+  }
+  .leftBlock {
+    height: 400px !important;
+  }
+  .leftBlock {
+    height: 500px !important;
+  }
+  
+  .phoneImage {
+    width: 155%;
+    left: -8%;
+    top: 11%;
+    z-index: 2;
+  }
+  .fiftyImage {
+    width: 65%;
+    height: fit-content;
+    top: -6%;
+    position: relative;
+    z-index: 1;
+    left: 2%;
+  }
+  .rightBlock {
+    width: 90%;
+  }
+  .logoDiv {
+    justify-items: right;
+   
+    left:10%;
+  }
+
+  .logoDiv > svg {
+    width: 65%;
+    justify-self: right;
+  }
+
+  .lizardImage {
+    width: 230px;
+    left: -8%;
+    top: -100px;
+  }
+
+  .turbo{
+    width: 80%;
+    height: fit-content;
+    position: absolute;
+    left: 115px;
+    top: -80px;
+    z-index: 1;
+  
+  
+  }
+
+}
+
+
+@media (max-width: 361px) {
+  .leftBlock {
+    height: 350px !important;
+  }
+  .leftBlock {
+    height: 400px !important;
+  }
+  .leftBlock {
+    height: 500px !important;
+  }
+  
+  .phoneImage {
+    width: 155%;
+    left: -8%;
+    top: 11%;
+    z-index: 2;
+  }
+  .fiftyImage {
+    width: 65%;
+    height: fit-content;
+    top: -19%;
+    position: relative;
+    z-index: 1;
+    left: 2%;
+  }
+  .rightBlock {
+    width: 90%;
+  }
+  .logoDiv {
+    justify-items: right;
+ 
+    left:10%;
+  }
+
+  .logoDiv > svg {
+    width: 65%;
+    justify-self: right;
+  }
+  .turbo{
+    width: 79%;
+    height: fit-content;
+    position: absolute;
+    left: 105px;
+    top: -90px;
+    z-index: 1;
+  
+  
+  }
+  .lizardImage {
+    width: 230px;
+    left: -12%;
+    top: -110px;
+  }
+
+
+
+}
+
+/* @media (max-width: 399px) {
+  .leftBlock {
+    height: 350px !important;
+  }
+  .leftBlock {
+    height: 400px !important;
+  }
+  .leftBlock {
+    height: 500px !important;
+  }
+  .text{
+    width: 55%;
+    margin-left: 30%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+  }
+  .phoneImage {
+    width: 115%;
+    left: -8%;
+    top: 11%;
+    z-index: 2;
+  }
+  .fiftyImage {
+    width: 65%;
+    height: fit-content;
+    top: -11%;
+    position: relative;
+    z-index: 1;
+    left: 2%;
+  }
+  .rightBlock {
+    width: 90%;
+    
+  }
+  .logoDiv {
+    justify-items: right;
+  
+    left:10%;
+  }
+
+  .logoDiv > svg {
+    width: 65%;
+    justify-self: right;
+  }
+
+  .lizardImage {
+    width: 180px;
+    left: -15%;
+    top: -30px;
+  } */
+
+
+

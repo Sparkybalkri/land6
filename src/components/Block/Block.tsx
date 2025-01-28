@@ -5,7 +5,7 @@ import { LinksBlock } from '../LinksBlock/LinksBlock';
 import { Header } from '../../components/HeaderComponents/Header/Header';
 import Vector3 from './Vector3.svg';
 import Vector4 from './Vector4.svg';
-import Logo from './logo.svg';
+import Logo from './Group1234.svg';
 import { Htag } from '../Htag/Htag';
 import { useRouter } from 'next/router';
 import { setLocale } from '@/helpers/locale.helper';
@@ -41,8 +41,8 @@ export const Block = () => {
             unoptimized={true}
           />
           <Image className={styles.phoneImage} draggable="false"
-              loader={() => '/img-phone (1).webp'}
-              src='/img-phone (1).webp'
+              loader={() => '/iphone(3).webp'}
+              src='/iphone(3).webp'
               alt='main phone image'
               width={1}
               height={1}
@@ -59,13 +59,22 @@ export const Block = () => {
               height={1}
               unoptimized={true}
             />
-            <Logo />
+              <Image className={styles.turbo} draggable="false"
+              loader={() => '/Group12.webp'}
+              src='/Group12.webp'
+              alt='main lizard image'
+              width={1}
+              height={1}
+              unoptimized={true}
+            />
           </div>
+          <div className={styles.text}>
           <Htag tag='xl'>
             {setLocale(router.locale).collect_more_stardust}
           </Htag>
+          </div>
           <Button className={styles.blockButton} text={setLocale(router.locale).play_in_telegram} type='primary'
-            size='l' isIcon={true} onClick={() => { }} />
+            size='l' isIcon={true}  onClick={() => window.open('https://t.me/turboton_farm_bot', '_blank')} />
         </div>
       </div>
       <LinksBlock />

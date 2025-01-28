@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: 1002px;
-    background-image: url('/dark-blue-bg (1).svg'); 
+    background: linear-gradient(to bottom, var(--black), #0A458D);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

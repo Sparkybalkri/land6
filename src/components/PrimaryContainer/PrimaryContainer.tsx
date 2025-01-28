@@ -3,6 +3,7 @@ import styles from "./PrimaryContainer.module.css";
 import Slider from "./Slider/Slider";
 import TextBlockw from './TextBlockw/TextBlockw';
 import { LinksBlock } from '../../components/LinksBlock/LinksBlock';
+import { Htag } from "../Htag/Htag";
 
 
 const PrimaryContainer: React.FC = () => {
@@ -29,7 +30,9 @@ const PrimaryContainer: React.FC = () => {
       
       <div className={styles.footer}>
       <div className={styles.fullWidthBorder}></div>
-        <h2>Welcome to the Fam! 🐸💕</h2>
+        <Htag tag='xxl'>
+          {'Welcome to the Fam! 🐸💕'}
+        </Htag>
         {/* <div className={styles.socialIcons}>
           <img src="Group 195.png" alt="Telegram" />
           <img src="Group 193.png" alt="Discord" />

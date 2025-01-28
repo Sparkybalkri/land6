@@ -11,13 +11,5 @@
     position: relative;
 }
 
-.h1 {
-    font-size: 56px;
-    line-height: 1.2;
-    font-weight: bold;
-    margin: 0; /* Убирает лишние внешние отступы */
-    position: relative;
-    z-index: 10px;
-}
 
   

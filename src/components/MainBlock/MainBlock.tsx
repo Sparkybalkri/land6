@@ -1,6 +1,6 @@
-
 import React, { useEffect, useState } from 'react';
 import styles from './MainBlock.module.css';
+
 
 const MainBlock = () => {
   const [scrollPosition, setScrollPosition] = useState(0);

@@ -1,0 +1,57 @@
+.mainBlock2 {
+    width: 100%;
+    display: grid;
+    background: linear-gradient(to bottom, var(--black), #0A458D);
+    justify-items: center !important;
+}
+
+.mainDiv {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: end;
+    padding-top: 100px;
+}
+
+.leftDiv {
+    display: grid;
+    gap: 18px;
+    justify-items: center;
+    position: relative;
+}
+
+.icon {
+    width: 52px;
+    height: fit-content;
+}
+
+.leftDiv > h1 {
+    text-align: center;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.image {
+    width: 90%;
+    height: fit-content;
+    margin-top: 60px;
+}
+
+@media (max-width: 800px) {
+    .mainBlock2 {
+        background: var(--black);
+    }
+
+    .mainDiv {
+        grid-template-columns: auto;
+        gap: 40px;
+    }
+
+    .leftDiv {
+        background: linear-gradient(to bottom, var(--black), #0A458D);
+        border-radius: 20px;
+    }
+}

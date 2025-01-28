@@ -16,6 +16,8 @@ import {Block} from '../../components/Block/Block';
 // import { LinksBlock } from '../../components/LinksBlock/LinksBlock';
 import MainBlock from '../../components/MainBlock/MainBlock';
 import { Header } from '../../components/HeaderComponents/Header/Header';
+import NewBlock from '@/components/NewBlock/NewBlock';
+import MainBlock2 from '@/components/MainBlock2/MainBlock2';
 
 
 const MainPage = (): JSX.Element => {
@@ -30,9 +32,10 @@ const MainPage = (): JSX.Element => {
         <FiftyMBlock /> */}
         {/* <LinksBlock />   */}
         <Block />
-         <MainTasksBlock/>
-        {/* <MainPageBlock /> */}
-        <MainBlock />
+         {/* <MainTasksBlock/> */}
+         <NewBlock />
+        <MainPageBlock />
+        <MainBlock2 />
         <PrimaryContainer/>  
         {/* <LinksBlock/> */}
       </div>

@@ -3,7 +3,7 @@
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr auto 1fr;
   width: 100%;
-  height: 63vh;
+  height: fit-content;
   margin: 0;
   padding: 0;
   background-image: url('/violet-bg.svg');
@@ -18,25 +18,12 @@
 }
 
 .mainSection {
-  grid-row: 2;
-  grid-column: 1 / -1;
+  width: 90%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  height: 100%;
-  padding: 0 40px;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 .leftColumn {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  padding-right: 40px;
-  width: 100%;
-  box-sizing: border-box;
-  padding-top: 40px;
+  display: grid;
 
 }
 
@@ -59,7 +46,7 @@
 }
 
 .gecko {
-  position: absolute;
+  position: relative;
   z-index: 2;
   width: 298.59px;
   height: 444.82px;
@@ -86,13 +73,7 @@
 }
 
 .textContent {
-  max-width: 550px;
-  max-height: 432px;
-  margin-right: calc(298.59px - 60%);
-  margin-top: -140px;
-  font-weight: 400;
-  font-family: 'Manrope', sans-serif;
-
+  
 }
 
 .bottomText {

@@ -1,0 +1,105 @@
+.newBlock {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    background: linear-gradient(to right, var(--black), #2D0173);
+}
+
+.conrainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    height: fit-content;
+    gap: 32px;
+    align-items: start;
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.textDiv {
+    display: grid;
+    gap: 24px;
+    height: fit-content;
+    z-index: 1;
+}
+
+.title {
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.geckoImage {
+    width: 300px;
+    height: fit-content;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+.tasksImage {
+    width: fit-content;
+    height: 60%;
+    position: absolute;
+    right: 0;
+    top: 140px;
+    z-index: 0;
+}
+
+@media (max-width: 1400px) {
+    .conrainer {
+        width: 90%;
+    }
+
+    .geckoImage {
+        width: 250px;
+    }
+
+    .tasksImage {
+        height: 50%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .conrainer {
+        grid-template-columns: auto;
+        padding: 60px 0;
+    }
+
+    .tasksImage {
+        width: 70%;
+        height: fit-content;
+        right: 0;
+        top: auto;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .geckoImage {
+        width: 40%;
+    }
+
+    .tasksImage {
+        width: 80%;
+    }
+}
+
+@media (max-width: 580px) {
+    .conrainer {
+        padding: 40px 0;
+    }
+
+    .tasksImage {
+        width: 110%;
+        right: -160px;
+        bottom: -20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .tasksImage {
+        width: 130%;
+        right: -200px;
+        bottom: 40px;
+    }
+}

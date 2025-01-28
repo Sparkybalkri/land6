@@ -58,14 +58,11 @@ const SliderBlock = () => {
       >
         {images.map((image, index) => (
           <div key={index} className={styles.slideContainer}>
-            <Image key={index} className={styles.slideContainer} draggable="false"
-              loader={() => image}
-              src={image}
-              alt={`Slide ${index + 1}`}
-              width={1}
-              height={1}
-              unoptimized={true}
-            />
+                <img
+                  src={images[currentImage]}
+                  alt={`Image ${index + 1}`}
+                  className={`${styles.image} ${showHelmet ? styles.imageVisible : ''}`}
+                />
             {index === currentImage && (
               <>
                 <img

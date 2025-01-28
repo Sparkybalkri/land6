@@ -72,3 +72,84 @@
   pointer-events: none;
   filter: brightness(150%);
 }
+@media (max-width: 800px) {
+  
+  .sliderWrapper {
+    overflow: hidden;
+    width: 900%;
+    position: relative;
+    z-index: 1;
+    margin-top: 1%;
+    overflow: hidden;  /* Это скроет горизонтальную прокрутку */
+    padding-bottom: 2%; /* И снизу */
+    padding-top: 55%; /* Добавляем отступ сверху */
+    right: 310%;
+  }
+  .sliderContainer {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    z-index: 2;
+    overflow: visible; /* Оставляем visible для контента */
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 4;
+    overflow: visible; /* Оставляем visible для контента */
+  }
+  .helmet {
+    position: absolute;
+    top: -12%;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    width: 5%;
+    height: auto;
+    z-index: 900;
+    overflow: visible; /* Оставляем visible для контента */
+    
+  }
+  .helmetVisible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  .rankText {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(20px);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    width: 15%;
+    height: auto;
+    z-index: 899;
+  }
+  .rankTextVisible {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  .backgroundImage {
+    position: absolute;
+    width: 400%;
+    height: 225%;
+    top: 60%;
+    left:130%;
+    transform: translate(-50%, -50%);
+    z-index: 0;  /* Это поместит изображение позади слайдера */
+    pointer-events: none;
+    filter: brightness(150%);
+  }
+
+
+
+
+
+
+
+
+
+}

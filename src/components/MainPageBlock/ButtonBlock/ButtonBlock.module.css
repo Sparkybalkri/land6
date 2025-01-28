@@ -33,3 +33,283 @@
 
     
   }
+
+  @media (max-width: 800px) {
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -8%;
+      position: relative;
+      z-index: 10;
+      right: 25%;
+      margin-top: 25%;
+    }
+    
+    .buttonImage{
+      width: 1000%;
+      
+  
+      
+    }
+
+
+
+
+
+  }
+
+  @media (max-width: 700px) {
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -8%;
+      position: relative;
+      z-index: 10;
+      right: 20%;
+      margin-top: 25%;
+    }
+    
+    .buttonImage{
+      width: 800%;
+      
+  
+      
+    }
+
+
+
+
+
+  }
+
+
+  @media (max-width: 770px) {
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -8%;
+      position: relative;
+      z-index: 10;
+      right: 20%;
+      margin-top: 25%;
+    }
+    
+    .buttonImage{
+      width: 800%;
+      
+  
+      
+    }
+
+
+
+
+
+  }
+
+  @media (max-width: 750px) {
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -8%;
+      position: relative;
+      z-index: 10;
+      right: 20%;
+      margin-top: 25%;
+    }
+    
+    .buttonImage{
+      width: 800%;
+      
+  
+      
+    }
+
+
+
+
+
+  }
+
+  @media (max-width: 720px) {
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -8%;
+      position: relative;
+      z-index: 10;
+      right: 20%;
+      margin-top: 25%;
+    }
+    
+    .buttonImage{
+      width: 800%;
+      
+  
+      
+    }
+
+
+
+
+
+  }
+
+
+  @media (max-width: 690px) {
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -8%;
+      position: relative;
+      z-index: 10;
+      right: 20%;
+      margin-top: 25%;
+    }
+    
+    .buttonImage{
+      width: 800%;
+      
+  
+      
+    }
+
+
+
+
+
+  }
+
+
+  @media (max-width: 670px) {
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -8%;
+      position: relative;
+      z-index: 10;
+      right: 20%;
+      margin-top: 25%;
+    }
+    
+    .buttonImage{
+      width: 800%;
+      
+  
+      
+    }
+
+
+
+
+
+  }
+
+  @media (max-width: 650px) {
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -8%;
+      position: relative;
+      z-index: 10;
+      right: 20%;
+      margin-top: 25%;
+    }
+    
+    .buttonImage{
+      width: 800%;
+      
+  
+      
+    }
+
+
+
+
+
+  }
+
+
+  @media (max-width: 630px) {
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -8%;
+      position: relative;
+      z-index: 10;
+      right: 20%;
+      margin-top: 25%;
+    }
+    
+    .buttonImage{
+      width: 800%;
+      
+  
+      
+    }
+
+
+
+
+
+  }
+
+
+  @media (max-width: 610px) {
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -8%;
+      position: relative;
+      z-index: 10;
+      right: 20%;
+      margin-top: 25%;
+    }
+    
+    .buttonImage{
+      width: 800%;
+      
+  
+      
+    }
+
+
+
+
+
+  }
+
+  @media (max-width: 590px) {
+    .buttonContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -8%;
+      position: relative;
+      z-index: 10;
+      right: 20%;
+      margin-top: 25%;
+    }
+    
+    .buttonImage{
+      width: 800%;
+      
+  
+      
+    }
+
+
+
+
+
+  }

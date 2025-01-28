@@ -132,14 +132,183 @@
     top: -70px;
   }
   .text{
-    width: 100%;
-  
+    width: 55%;
+    margin-left: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    margin-top: 10%;
   }
+.phone
   .phoneImage {
     width: 500px;
     left: 0;
   }
+  .lizardImage {
+    width: 80%;
+    height: fit-content;
+    position: absolute;
+    left: -180px;
+    top: -165px;
+    z-index: 2;
+  }
+  .blockButton {
+    width: 50% !important;
+  }
 }
+@media (max-width: 1280px) {
+  .lizardImage {
+    width: 350px;
+    left: -200px;
+    top: -70px;
+  }
+  .text{
+    width: 55%;
+    margin-left: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    margin-top: 4%;
+  }
+.phone
+  .phoneImage {
+    width: 500px;
+    left: 0;
+  }
+  .lizardImage {
+    width: 80%;
+    height: fit-content;
+    position: absolute;
+    left: -180px;
+    top: -165px;
+    z-index: 2;
+  }
+  .blockButton {
+    width: 50% !important;
+  }
+}
+@media (max-width: 1216px) {
+  .lizardImage {
+    width: 350px;
+    left: -200px;
+    top: -70px;
+  }
+  .text{
+    width: 65%;
+    margin-left: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    margin-top: 2%;
+  }
+.phone
+  .phoneImage {
+    width: 500px;
+    left: 0;
+  }
+  .lizardImage {
+    width: 80%;
+    height: fit-content;
+    position: absolute;
+    left: -180px;
+    top: -165px;
+    z-index: 2;
+  }
+  .blockButton {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 1160px) {
+  .lizardImage {
+    width: 350px;
+    left: -200px;
+    top: -70px;
+  }
+  .text{
+    width: 65%;
+    margin-left: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    margin-top: -2%;
+  }
+.phone
+  .phoneImage {
+    width: 500px;
+    left: 0;
+  }
+  .lizardImage {
+    width: 80%;
+    height: fit-content;
+    position: absolute;
+    left: -180px;
+    top: -165px;
+    z-index: 2;
+  }
+  .blockButton {
+    width: 50% !important;
+  }
+}
+@media (max-width: 1012px) {
+  .lizardImage {
+    width: 350px;
+    left: -200px;
+    top: -70px;
+  }
+  .text{
+    width: 75%;
+    margin-left: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    margin-top: -4%;
+  }
+
+  .phoneImage {
+    width: 500px;
+    left: 0;
+  }
+  .lizardImage {
+    width: 80%;
+    height: fit-content;
+    position: absolute;
+    left: -180px;
+    top: -165px;
+    z-index: 2;
+  }
+  .blockButton {
+    width: 50% !important;
+  }
+} 
+
+
+@media (max-width: 900px) {
+  .lizardImage {
+    width: 350px;
+    left: -200px;
+    top: -70px;
+  }
+  .text{
+    width: 70%;
+    margin-left: 0%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    margin-top: -12%;
+  }
+
+  .phoneImage {
+    width: 500px;
+    left: 0;
+  }
+  .lizardImage {
+    width: 80%;
+    height: fit-content;
+    position: absolute;
+    left: -110px;
+    top: -135px;
+    z-index: 2;
+  }
+  .blockButton {
+    width: 65% !important;
+    
+  }
+} 
 
 @media (max-width: 800px) {
 	.cointainer {
@@ -183,6 +352,7 @@
     margin-left: 30%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 36px;
+    margin-top: 2%;
   }
 
   .rightBlock > h1 {
@@ -201,6 +371,7 @@
 
   .blockButton {
     width: 100% !important;
+    height: 150px;
   }
 
   .logoDiv {
@@ -286,7 +457,13 @@
     left: -9%;
     top: -100px;
   }
-
+  .text{
+    width: 40%;
+    margin-left: 30%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    margin-top: 2%;
+  }
 }
 
 
@@ -341,6 +518,7 @@
     margin-left: 30%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 36px;
+    margin-top: 2%;
   }
   .logoDiv > svg {
     width: 65%;
@@ -434,7 +612,13 @@
   .leftBlock {
     height: 500px !important;
   }
-  
+  .text{
+    width: 45%;
+    margin-left: 30%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 36px;
+    margin-top: 0%;
+  }
   .phoneImage {
     width: 155%;
     left: -8%;

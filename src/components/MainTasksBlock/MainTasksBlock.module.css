@@ -128,7 +128,10 @@
 .character.visible {
   animation: typeCharacter 0.05s forwards;
 }
+.tasksBackground1{
 
+  z-index: -100;
+}
 .title {
   color: white;
   font-size: 56px;
@@ -149,4 +152,252 @@
 
 .secondParagraph {
   margin-top: 20px; /* Отступ между параграфами */
+}
+@media (max-width: 720px) {
+  .mainContainer {
+    display: grid;
+		grid-template-columns: 1fr;
+    grid-template-areas: 
+    "leftColumn"
+    "middleColumn";
+
+    width: 100%;
+    min-height: 170%;
+    margin: 0;
+    padding: 0;
+    background-image: url('/2025-01-28_13-39-16.webp');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0px;
+    overflow: hidden;
+    margin-top: 0px;
+    justify-items: center;
+    gap: 0px;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+
+.leftColumn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 0px;
+  width: 300%;
+  box-sizing: border-box;
+  padding-top: 0px;
+  margin-top: -190%;
+  margin-left: 0%;
+}
+
+.middleColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  top: 14%;
+  left: -160%
+}
+.contentWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.gecko {
+  position: absolute;
+  z-index: 2;
+  width: 250%;
+  height: 494.82px;
+  margin-top: 99%;
+  left: 80%;
+  transform: translateX(-50%);
+}
+.tasksBackground1 {
+  position: absolute;
+  z-index: 1;
+  width: 800px;
+  height: 626px;
+  transform: translateY(50%); /* Начальная позиция ниже */
+  transition: transform 0.3s ease-out;
+  object-fit: contain;
+  
+  top: 100%;
+  left: 36%;
+}
+.tasksBackground{
+  z-index: -200;
+
+
+}
+
+
+.title {
+  color: white;
+  font-size: 64px;
+  line-height: 68px;
+  margin: 0;
+  font-weight: 500;
+  font-family: 'Manrope', sans-serif;
+  margin-bottom: 70px;
+}
+
+.description {
+  color: white;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 2px 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+.textContent {
+  max-width: 650px;
+  max-height: 532px;
+  margin-right: calc(298.59px - 60%);
+  margin-top: -140px;
+  font-weight: 400;
+  font-family: 'Manrope', sans-serif;
+
+}
+
+.secondParagraph {
+  margin-top: 20px; /* Отступ между параграфами */
+}
+
+}
+
+@media (max-width: 800px) {
+  .mainContainer {
+    display: grid;
+		grid-template-columns: 1fr;
+    grid-template-areas: 
+    "leftColumn"
+    "middleColumn";
+
+    width: 100%;
+    min-height: 200%;
+    margin: 0;
+    padding: 0;
+    background-image: url('/violet-bg.svg');
+    background-size: 1000% 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0px;
+    overflow: hidden;
+    margin-top: 0%;
+    justify-items: center;
+    gap: 0px;
+    position: relative;
+    box-sizing: border-box;
+  }
+
+  .mainSection {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    height: 100%;
+    padding: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+.leftColumn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 0px;
+  width: 300%;
+  box-sizing: border-box;
+  padding-top: 0px;
+  margin-top: -250%;
+  margin-left: 0%;
+}
+
+.middleColumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  top: 4%;
+  left: -160%;
+  height: 200%;
+}
+.contentWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.gecko {
+  position: absolute;
+  z-index: 2;
+  width: 250%;
+  height: 494.82px;
+  margin-top: 99%;
+  left: 80%;
+  transform: translateX(-50%);
+}
+.tasksBackground1 {
+  position: absolute;
+  z-index: 1;
+  width: 800px;
+  height: 626px;
+  transform: translateY(50%); /* Начальная позиция ниже */
+  transition: transform 0.3s ease-out;
+  object-fit: contain;
+  right: calc(50% - 298.59px / 2 - 580px);
+  top: 100%;
+  left: 72%;
+}
+.tasksBackground{
+  z-index: -200;
+
+
+}
+
+
+.title {
+  color: white;
+  font-size: 64px;
+  line-height: 68px;
+  margin: 0;
+  font-weight: 500;
+  font-family: 'Manrope', sans-serif;
+  margin-bottom: 70px;
+}
+
+.description {
+  color: white;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 2px 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+.textContent {
+  max-width: 650px;
+  max-height: 532px;
+  margin-right: calc(298.59px - 60%);
+  margin-top: -140px;
+  font-weight: 400;
+  font-family: 'Manrope', sans-serif;
+
+}
+
+.secondParagraph {
+  margin-top: 20px; /* Отступ между параграфами */
+}
+
 }

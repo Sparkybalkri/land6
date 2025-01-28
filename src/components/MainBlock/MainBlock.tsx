@@ -76,7 +76,7 @@ const MainBlock = () => {
         </div>
 
         {/* Правая колонка */}
-        <div className={styles.column}>
+        <div className={styles.column1}>
         <div className={styles.textContainer}>
             <img 
               src="/Subtract1.svg" 

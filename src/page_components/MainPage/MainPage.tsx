@@ -31,7 +31,7 @@ const MainPage = (): JSX.Element => {
         {/* <LinksBlock />   */}
         <Block />
          <MainTasksBlock/>
-        <MainPageBlock />
+        {/* <MainPageBlock /> */}
         <MainBlock />
         <PrimaryContainer/>  
         {/* <LinksBlock/> */}

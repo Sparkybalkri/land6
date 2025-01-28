@@ -121,7 +121,17 @@ const MainTasksBlock: React.FC = () => {
               alt="Tasks Background" 
               className={styles.tasksBackground}
               style={{
-                transform: `translate(-0%, calc(8% + ${-scrollPosition * 0.08}px))`,
+                transform: `translate(-0%, calc(-2% + ${-scrollPosition * 0.08}px))`,
+                
+              }}
+            />
+                      <div className={styles.contentWrapper}>
+            <img 
+              src="/bg-tasks.svg" 
+              alt="Tasks Background" 
+              className={styles.tasksBackground1}
+              style={{
+                transform: `translate(-0%, calc(-23% + ${-scrollPosition * 0.08}px))`,
                 
               }}
             />
@@ -132,7 +142,7 @@ const MainTasksBlock: React.FC = () => {
         </div>
         <div className={styles.rightColumn} />
       </div>
-
+      </div>
     </div>
   );
 };
